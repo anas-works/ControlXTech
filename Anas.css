@@ -42,7 +42,7 @@ html{
 
 body.dark {background-color: #121315;}
 
-body.dark h1, body.dark .support a{color: #fff;}
+body.dark h1, body.dark .support a {color: #fff;}
 body.dark .checkbox-label{
     background-color: #fff;
 }
@@ -414,6 +414,10 @@ body.dark .box-title, body.dark .box-para{
 
 
 /*  ABOUT PART 1 STARTS */
+body.dark .aboutText{
+    color: #fff;
+}
+
 .about-p1{
     width: 100vw;
     display: flex;
@@ -427,7 +431,7 @@ body.dark .box-title, body.dark .box-para{
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 1.8vw;
 }
 .wos{
     display: flex;
@@ -443,9 +447,9 @@ body.dark .box-title, body.dark .box-para{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* word-spacing: 1px; */
-    width: 30vw;
-    font-size: 1.2vw;
+    width: 35vw;
+    font-size: 1.1vw;
+    font-family: "Poppins", serif;
     margin-bottom: 3vw;
 }
 .ab-hr{
