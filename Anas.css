@@ -617,16 +617,16 @@ body.dark .aboutText{
     font-family: var(--secondaryFont);
 }
 .aboutDown{
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: end;
     align-items: center;
     margin-bottom: 5vw;
 }
 .innerAboutDown{
-    width: 60%;
-    height: 85vh;
-    font-size: 1.7vw;
+    width: 55%;
+    height: 75vh;
+    font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -653,3 +653,37 @@ body.dark .aboutText{
     color: var(--Orange);
     border: 2px solid var(--Orange);
 }
+.br-mobile{
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .br-mobile{
+        display: none;
+    }    
+    .aboutInner{
+        width: 90%;
+    }
+    .aboutUp{
+        width: 100%;
+        font-size: 5.5vw;
+        line-height: 8vw;
+        height: 22vh;
+        margin-top: 8vw;
+    }
+    .aboutDown{
+        width: 100%;
+        justify-content: start;
+    }
+    .innerAboutDown{
+        height: 90vh;
+        width: 100%;
+        font-size: 5vw;
+    }
+    .aBtn{
+        width: 35vw;
+        height: 13vw;
+        font-size: 3.5vw;
+    }
+}
+
