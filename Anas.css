@@ -814,7 +814,6 @@ body.dark .aboutText{
 .aboutUp{
     width: 70%;
     height: 50vh;
-    font-family: var(--secondaryFont);
     font-size: 3vw;
     font-weight: 700;
     line-height: 5vw;
@@ -822,30 +821,43 @@ body.dark .aboutText{
     justify-content: center;
     align-items: center;
 }
+.aboutUp h1{
+    font-family: var(--secondaryFont);
+}
 .aboutDown{
     width: 90%;
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-bottom: 5vw;
 }
 .innerAboutDown{
     width: 60%;
     height: 85vh;
-    font-family: var(--secondaryFont);
     font-size: 1.7vw;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+.aPara{
+    font-family: var(--secondaryFont);
+}
 .aBtn{
+    font-family: var(--secondaryFont);
     width: 14vw;
     height: 5vw;
     border-radius: 50px;
-    color: #121315;
-    background-color: #f39c12;
+    background-color: #121315;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     font-size: 1.5vw;
+    transition: all 0.3s linear;
+}
+.aBtn:hover{
+    background-color: transparent;
+    color: var(--Orange);
+    border: 2px solid var(--Orange);
 }
