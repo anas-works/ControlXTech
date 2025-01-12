@@ -639,8 +639,9 @@ body.dark .aboutText{
     width: 14vw;
     height: 5vw;
     border-radius: 50px;
-    background-color: #121315;
-    color: #fff;
+    border: 2px solid #121315;
+    /* background-color: #121315; */
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -649,9 +650,10 @@ body.dark .aboutText{
     transition: all 0.3s linear;
 }
 .aBtn:hover{
-    background-color: transparent;
-    color: var(--Orange);
-    border: 2px solid var(--Orange);
+    /* background-color: transparent; */
+    color: #fff;
+    background-color: var(--Orange);
+    border: none;
 }
 .br-mobile{
     display: flex;
