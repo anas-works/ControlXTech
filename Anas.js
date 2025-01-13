@@ -10,6 +10,7 @@
 //     document.body.classList.toggle("dark");
 // });
 
+gsap.registerPlugin(ScrollTrigger);
 
 if(window.innerWidth > 500){
 
@@ -20,29 +21,30 @@ if(window.innerWidth > 500){
         const bg = char.dataset.bgColor
         const fg = char.dataset.fgColor
         const fontFamily = "'Montserrat', sans-serif";
-
-          const text = new SplitType(char, { types: 'chars'});
-          text.chars.forEach(charElement => {
+        
+        const text = new SplitType(char, { types: 'chars'});
+        text.chars.forEach(charElement => {
             charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
             });
 
-          gsap.fromTo(text.chars, 
-              {
-                  color: bg,
-              },
-              {
-                  color: fg,
-                  duration: 0.3,
-                  stagger: 0.02,
-                  scrollTrigger: {
-                      trigger: char,
-                      start: 'top 60%',
-                      end: '100% 60%',
-                      scrub: true,
-                      toggleActions: 'play play reverse reverse'
-                  }
-          });
-      });
+            gsap.fromTo(text.chars, 
+                {
+                    color: bg,
+                },
+                {
+                    color: fg,
+                    duration: 5,
+                    stagger: 2,
+                    // transition: "0.3s ease color",
+                    scrollTrigger: {
+                        trigger: char,
+                        start: 'top 60%',
+                        end: '100% 60%',
+                        scrub: true,
+                        toggleActions: 'play play reverse reverse'
+                    }
+                });
+        });
 
 
       const splitTypes2 = document.querySelectorAll('.aPara2');
@@ -54,17 +56,51 @@ if(window.innerWidth > 500){
 
           const text = new SplitType(char, { types: 'chars'});
           text.chars.forEach(charElement => {
-            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+              charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
             });
+            
+            gsap.fromTo(text.chars, 
+                {
+                    color: bg,
+                },
+                {
+                    color: fg,
+                    duration: 0.3,
+                    stagger: 0.02,
+                    // transition: "0.3s ease color",
+                    scrollTrigger: {
+                        trigger: char,
+                        start: '-10% 60%',
+                        end: '100% 60%',
+                        scrub: true,
+                        toggleActions: 'play play reverse reverse'
+                  }
+                });
+      });
 
-          gsap.fromTo(text.chars, 
-              {
-                  color: bg,
-              },
-              {
-                  color: fg,
-                  duration: 0.3,
-                  stagger: 0.02,
+
+      const splitTypes3 = document.querySelectorAll('.aPara3');
+
+      splitTypes3.forEach((char,i) => {
+          const bg = char.dataset.bgColor
+          const fg = char.dataset.fgColor
+          const fontFamily = "'Montserrat', sans-serif";
+           
+          
+          const text = new SplitType(char, { types: 'chars'});
+          text.chars.forEach(charElement => {
+              charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+            });
+            
+            gsap.fromTo(text.chars, 
+                {
+                    color: bg,
+                },
+                {
+                    color: fg,
+                    duration: 0.3,
+                    stagger: 0.02,
+                    // transition: "0.3s ease color",
                   scrollTrigger: {
                       trigger: char,
                       start: '-10% 60%',
@@ -76,35 +112,51 @@ if(window.innerWidth > 500){
       });
 
 
-      const splitTypes3 = document.querySelectorAll('.aPara3');
+    //   gsap.to(".vCard6", {
+    //     scrollTrigger: {
+    //       trigger: ".videoSection",
+    //       start: "60% 50%",
+    //       end: "60% 50%",
+    //       scrub: true,
+    //     }, 
+    //     overflow: "visible",
+    //     // ease: "sine.inOut",
+    //   });
 
-      splitTypes3.forEach((char,i) => {
-          const bg = char.dataset.bgColor
-          const fg = char.dataset.fgColor
-          const fontFamily = "'Montserrat', sans-serif";
-           
-
-          const text = new SplitType(char, { types: 'chars'});
-          text.chars.forEach(charElement => {
-            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
-            });
-            
-          gsap.fromTo(text.chars, 
-              {
-                  color: bg,
-              },
-              {
-                  color: fg,
-                  duration: 0.3,
-                  stagger: 0.02,
-                  scrollTrigger: {
-                      trigger: char,
-                      start: '-10% 60%',
-                      end: '100% 60%',
-                      scrub: true,
-                      toggleActions: 'play play reverse reverse'
-                  }
-          });
+    
+    //   gsap.to(".vidCard", {
+    //     scrollTrigger: {
+    //       trigger: ".videoSection",
+    //       start: "60% 50%",
+    //       end: "150% 50%",
+    //       scrub: true,
+    //     //   markers:true
+    //     }, 
+    //     y: "75vh",
+    //   });
+    
+    gsap.to(".vidCard", {
+        scrollTrigger: {
+            trigger: ".videoSection",
+            start: "53% 50%",
+            end: "80% 50%",
+            scrub: true,
+        },
+        width: "82vw",
+        height: "95vh",
+        ease: "sine.inOut",
+    });
+    
+    gsap.to(".videoIn", {
+        scrollTrigger: {
+            trigger: ".videoSection",
+            start: "53% 50%",
+            end: "80% 50%",
+            scrub: true,
+        }, 
+        width: "82vw",
+        height: "95vh",
+        ease: "sine.inOut",
       });
 
 }
