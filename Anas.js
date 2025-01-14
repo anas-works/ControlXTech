@@ -10,6 +10,8 @@
 //     document.body.classList.toggle("dark");
 // });
 
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 if (window.innerWidth > 500) {
@@ -21,8 +23,8 @@ if (window.innerWidth > 500) {
             end: "80% 50%",
             scrub: true,
         },
-        width: "82vw",
-        height: "95vh",
+        width: "83vw",
+        height: "96vh",
         ease: "sine.inOut",
     });
     
@@ -33,8 +35,59 @@ if (window.innerWidth > 500) {
             end: "80% 50%",
             scrub: true,
         }, 
-        width: "82vw",
-        height: "95vh",
+        width: "83vw",
+        height: "96vh",
+        ease: "sine.inOut",
+    });
+
+    gsap.to(".vSec-p1", {
+        scrollTrigger: {
+            trigger: ".videoSection",
+            start: "0% 50%",
+            end: "20%% 50%",
+            scrub: true,
+        },
+        transform: "translateY(0vw)",
+        ease: "sine.inOut",
+    });
+    gsap.to(".vSec-p2", {
+        scrollTrigger: {
+            trigger: ".videoSection",
+            start: "0% 50%",
+            end: "20%% 50%",
+            scrub: true,
+        },
+        transform: "translateY(7vw)",
+        ease: "sine.inOut",
+    });
+    gsap.to(".vSec-p3", {
+        scrollTrigger: {
+            trigger: ".videoSection",
+            start: "0% 50%",
+            end: "20%% 50%",
+            scrub: true,
+        },
+        transform: "translateY(4vw)",
+        ease: "sine.inOut",
+    });
+    gsap.to(".vSec-p4", {
+        scrollTrigger: {
+            trigger: ".videoSection",
+            start: "0% 50%",
+            end: "20%% 50%",
+            scrub: true,
+        },
+        transform: "translateY(2vw)",
+        ease: "sine.inOut",
+    });
+    gsap.to(".vSec-p5", {
+        scrollTrigger: {
+            trigger: ".videoSection",
+            start: "0% 50%",
+            end: "20%% 50%",
+            scrub: true,
+        },
+        transform: "translateY(5vw)",
         ease: "sine.inOut",
     });
     
@@ -57,12 +110,12 @@ if (window.innerWidth > 500) {
             },
             {
                 color: fg,
-                duration: 5,
-                stagger: 2,
+                duration: 0.3,
+                stagger: 0.02,
                 // transition: "0.3s ease color",
                 scrollTrigger: {
                     trigger: char,
-                    start: 'top 60%',
+                    start: 'top 80%',
                     end: '100% 60%',
                     scrub: true,
                     toggleActions: 'play play reverse reverse'
@@ -137,3 +190,27 @@ if (window.innerWidth > 500) {
             
             
 }
+
+
+
+
+// time
+function updateTime() {
+    const now = new Date();
+    
+    // Format time with hours, minutes, and seconds (no timezone)
+    const options = {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+    };
+    
+    const formattedTime = new Intl.DateTimeFormat('en-US', options).format(now);
+    
+    // Display the time
+    document.getElementById('datetime').textContent = formattedTime;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+

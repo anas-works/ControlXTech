@@ -718,7 +718,7 @@ body.dark .aboutText{
     height: 25vw;
 }
 .rect-img{
-    width: 19vw;
+    width: 18vw;
     height: auto;
 }
 .imgCard2{
@@ -730,7 +730,7 @@ body.dark .aboutText{
     height: 15.5vw;
 }
 .rect-img2{
-    width: 19.5vw;
+    width: 18vw;
     height: auto;
 }
 
@@ -768,30 +768,99 @@ body.dark .aboutText{
     height: 25vw;
     transition: all 0.2s linear;
     position: sticky;
-    top: 37%;
+    top: 35%;
 }
 .videoIn{
     transition: all 0.1s linear;
     width: 18vw;
     height: 25vw;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 20px;
 }
-.vSec-p2{
-    transform: translateY(8vw);
-}
-.vSec-p3{
-    transform: translateY(4vw);
-}
-.vSec-p4{
+.vSec-p1{
     transform: translateY(2vw);
 }
-.vSec-p5{
+.vSec-p2{
+    transform: translateY(5vw);
+}
+.vSec-p3{
     transform: translateY(6vw);
 }
+.vSec-p4{
+    transform: translateY(0vw);
+}
+.vSec-p5{
+    transform: translateY(7vw);
+}
 
-
-
+.vCard4,.vCard10,.vCard1,.vCard8,.vCard3,.vCard7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.card4Title,.card1Title{
+    width: 82%;
+    display: flex;
+    gap: 2%;
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin-top: 1.5vw;
+}
+.dark4title{
+    font-family: var(--secondaryFont);
+    color: #06171D;
+}
+.light4title{
+    font-family: var(--secondaryFont);
+    color: #BDBE60;
+}
+.contentCard4,.contentCard1{
+    width: 82%;
+    color: #06171D;
+    margin-bottom: 1.5vw;
+}
+.headingCard4,.headingCard1{
+    font-weight: 700;
+    font-family: var(--secondaryFont);
+    font-size: 2.5vw;
+    margin-bottom: 0.8vw;
+}
+.cont4,.cont1{
+    font-size: 1.1vw;
+    font-family: var(--secondaryFont);
+}
+.dark1title{
+    font-family: var(--secondaryFont);
+    color: #9EFCF1;
+}
+.light1title{
+    font-family: var(--secondaryFont);
+    color: #2F727D;
+}
+.contentCard1{
+    color: #9EFCF1;
+}
+.headingCard1{
+    font-size: 6vw;
+}
+.cont1,.content4{
+    font-size: 1.2vw;
+}
+.dark3Title{
+    font-family: var(--secondaryFont);
+    color: #E9EAE5;
+}
+.light3Title{
+    font-family: var(--secondaryFont);
+    color: #495558;
+}
+.headingCard3,.cont3{
+    color: #E9EAE5;
+}
+.hCard7{
+    font-size: 2vw;
+}
 
 .videoSpace{
     height: 20vh;
