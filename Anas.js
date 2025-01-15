@@ -11,7 +11,6 @@
 // });
 
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 if (window.innerWidth > 500) {
@@ -43,7 +42,7 @@ if (window.innerWidth > 500) {
     gsap.to(".vSec-p1", {
         scrollTrigger: {
             trigger: ".videoSection",
-            start: "0% 50%",
+            start: "-20% 50%",
             end: "20%% 50%",
             scrub: true,
         },
@@ -53,7 +52,7 @@ if (window.innerWidth > 500) {
     gsap.to(".vSec-p2", {
         scrollTrigger: {
             trigger: ".videoSection",
-            start: "0% 50%",
+            start: "-20% 50%",
             end: "20%% 50%",
             scrub: true,
         },
@@ -63,7 +62,7 @@ if (window.innerWidth > 500) {
     gsap.to(".vSec-p3", {
         scrollTrigger: {
             trigger: ".videoSection",
-            start: "0% 50%",
+            start: "-20% 50%",
             end: "20%% 50%",
             scrub: true,
         },
@@ -73,7 +72,7 @@ if (window.innerWidth > 500) {
     gsap.to(".vSec-p4", {
         scrollTrigger: {
             trigger: ".videoSection",
-            start: "0% 50%",
+            start: "-20% 50%",
             end: "20%% 50%",
             scrub: true,
         },
@@ -83,7 +82,7 @@ if (window.innerWidth > 500) {
     gsap.to(".vSec-p5", {
         scrollTrigger: {
             trigger: ".videoSection",
-            start: "0% 50%",
+            start: "-20% 50%",
             end: "20%% 50%",
             scrub: true,
         },

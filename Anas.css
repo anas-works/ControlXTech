@@ -34,6 +34,25 @@ html{
 :root{
     --secondaryFont: "Montserrat", sans-serif, serif;
     --Orange: #e3720f;
+
+
+
+    --btn-icon-bg-color: #191d24;
+	--btn-icon-border-color: rgba(255, 255, 255, 0.3);
+	--btn-icon-shadow-color: rgba(255, 255, 255, 0.5);
+
+	--btn-social-bg-color: transparent;
+	--btn-social-border-color: transparent;
+
+	--footer-border-color: #191d24;
+
+	--link-color: rgba(255, 255, 255, 0.5);
+	--link-hover-color: rgba(255, 255, 255, 1);
+	--link-active-color: rgba(255, 255, 255, 1);
+
+	--bg-color: #010314;
+
+	--desc-copyright-color: #69758c;
 }
 
 
@@ -866,3 +885,6 @@ body.dark .aboutText{
     height: 20vh;
     width: 100vw;
 }
+
+
+
