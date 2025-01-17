@@ -97,7 +97,7 @@ if (window.innerWidth > 500) {
         scrollTrigger: {
             trigger: ".videoSection",
             start: "-20% 50%",
-            end: "20%% 50%",
+            end: "30%% 50%",
             scrub: true,
         },
         transform: "translateY(0vw)",
@@ -107,7 +107,7 @@ if (window.innerWidth > 500) {
         scrollTrigger: {
             trigger: ".videoSection",
             start: "-20% 50%",
-            end: "20%% 50%",
+            end: "30%% 50%",
             scrub: true,
         },
         transform: "translateY(7vw)",
@@ -117,7 +117,7 @@ if (window.innerWidth > 500) {
         scrollTrigger: {
             trigger: ".videoSection",
             start: "-20% 50%",
-            end: "20%% 50%",
+            end: "30%% 50%",
             scrub: true,
         },
         transform: "translateY(4vw)",
@@ -127,7 +127,7 @@ if (window.innerWidth > 500) {
         scrollTrigger: {
             trigger: ".videoSection",
             start: "-20% 50%",
-            end: "20%% 50%",
+            end: "30%% 50%",
             scrub: true,
         },
         transform: "translateY(2vw)",
@@ -137,7 +137,7 @@ if (window.innerWidth > 500) {
         scrollTrigger: {
             trigger: ".videoSection",
             start: "-20% 50%",
-            end: "20%% 50%",
+            end: "30%% 50%",
             scrub: true,
         },
         transform: "translateY(5vw)",
