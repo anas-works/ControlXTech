@@ -8,13 +8,10 @@
     box-sizing: border-box;
     font-family: "Inter", serif;
 }
-body {
-  background-color: #fff;
-  transition: background 0.2s linear;
-  margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+:root{
+    --secondaryFont: "Montserrat", sans-serif, serif;
+    --Orange: #e3720f;
+    --Main-Color: #EBECE7;
 }
 html{
     scroll-behavior: smooth;
@@ -31,10 +28,18 @@ html{
     display: none;
 }
 
-:root{
-    --secondaryFont: "Montserrat", sans-serif, serif;
-    --Orange: #e3720f;
+
+
+
+body {
+  background: var(--Main-Color);
+  transition: background 0.2s linear;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
 }
+
 
 
 
@@ -96,36 +101,47 @@ body.dark .ball{
   transform: translateX(2vw);
 }
 
-.header{
+
+/* Hero Section */
+.Hero-Section{
+    height: 100vh;
     width: 100vw;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+/* Hero Section */
+
+.video-container{
+    width: 19vw;
+    height: 21vw;
+    border-radius: 6px !important;
+    position: absolute;
+    /* overflow: hidden; */
 }
 
-@media (max-width: 500px) {
-    .checkbox-label{
-        width: 12vw;
-        height: 6vw;
-    }
-    .fa-moon,.fa-sun{
-        font-size: 3vw;
-    }
-    .ball{
-        width: 4vw;
-        height: 4vw;
-        right: 11vw;
-    }
-    body.dark .ball{
-        width: 5vw;
-        height: 5vw;
-    }    
-    .checkbox:checked + .checkbox-label + .ball {
-        transform: translateX(5.2vw);
-    }
+.Hero-Section img, .Hero-Section video{
+    width: 19vw;
+    height: 21vw;
+    border-radius: 6px !important;
+    position: absolute;
+    
 }
-
+.Hero-vid-1{
+    left: 35vw;
+    top: -8vw;
+}
+.hero-img2{
+    left: 0vw;
+    top: 10vw;
+}
+.hero-img3{
+    left: 27vw;
+    bottom: -15vw;
+}
+.hero-img4{
+    right: -10vw;
+    top: 18vw;
+}
 
 
 
