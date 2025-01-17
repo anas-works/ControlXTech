@@ -22,8 +22,8 @@ if (window.innerWidth > 500) {
             end: "80% 50%",
             scrub: true,
         },
-        width: "83vw",
-        height: "96vh",
+        width: "81vw",
+        height: "95vh",
         ease: "sine.inOut",
     });
     
@@ -34,8 +34,8 @@ if (window.innerWidth > 500) {
             end: "80% 50%",
             scrub: true,
         }, 
-        width: "83vw",
-        height: "96vh",
+        width: "81vw",
+        height: "95vh",
         ease: "sine.inOut",
     });
 
