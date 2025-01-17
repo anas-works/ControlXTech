@@ -11,6 +11,60 @@
 // });
 
 
+
+
+// Custom Cursor
+
+   // Create a custom cursor element and append it to the body
+   const cursor = document.createElement("div");
+   cursor.classList.add("custom-cursor-circle");
+
+   // Create the inner dot and append it to the cursor
+   const innerDot = document.createElement("div");
+   innerDot.classList.add("inner-dot");
+   cursor.appendChild(innerDot);
+
+   // Append the custom cursor to the body
+   document.body.appendChild(cursor);
+
+   // Track mouse movement and update cursor position
+   document.addEventListener("mousemove", (event) => {
+     cursor.style.left = `${event.clientX}px`;
+     cursor.style.top = `${event.clientY}px`;
+   });
+
+// Hero elements on cursor movement
+// Text
+document.addEventListener("mousemove", (event) => {
+    const images = document.querySelectorAll(".mouse-movement");
+    const { clientX, clientY } = event;
+  
+    images.forEach((image, index) => {
+      const speed = (index + 1) * 20; // Each image moves at a slightly different speed
+      const x = (window.innerWidth / 2 - clientX) / speed;
+      const y = (window.innerHeight / 2 - clientY) / speed;
+  
+      image.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  });
+
+// images
+document.addEventListener("mousemove", (event) => {
+    const images = document.querySelectorAll(".mouse-movement-images");
+    const { clientX, clientY } = event;
+  
+    images.forEach((image, index) => {
+      const speed = (index + 1) * 3; // Each image moves at a slightly different speed
+      const x = (window.innerWidth / 2 - clientX) / speed;
+      const y = (window.innerHeight / 2 - clientY) / speed;
+  
+      image.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  });
+
+
+
+//   gsap
 gsap.registerPlugin(ScrollTrigger);
 
 if (window.innerWidth > 500) {

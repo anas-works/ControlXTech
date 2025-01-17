@@ -44,9 +44,11 @@ html{
     align-items: center;
     /* margin-bottom: 10vw; */
     background-color: transparent;
-    padding: 0 5vw;
+    padding: 0 3.5vw;
     position: absolute;
     top: 0;
+    z-index: 999;
+    margin-top: 1vw;
     /* border: 1px solid red; */
 }
 
@@ -115,6 +117,7 @@ html{
       transition: ease 0.2s;
       background: var(--Orange);
       color: #f3f3f3;
+      transform: scale(1.04);
   }
   
   .button-17:active {
@@ -182,17 +185,35 @@ html{
     }
     
     .nav > .nav-links > a {
+      width: auto;
       display: inline-block;
       padding: 13px 1.5vw;
       text-decoration: none;
       color: #000;
       font-weight: 600;
+      position: relative; /* Needed for the pseudo-element */
+      transition: all 0.3s ease; /* Smooth transition */
+      /* border: 1px solid red; */
+    }
+    
+    .nav > .nav-links > a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px; /* Line thickness */
+      background-color: #000; /* Line color */
+      transition: width 0.3s ease; /* Smooth animation */
     }
     
     .nav > .nav-links > a:hover {
-      transition: all ease 0.3s;
-      color: var(--Orange);
       transform: scale(1.1);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    }
+    
+    .nav > .nav-links > a:hover::after {
+      width: 100%; /* Expand the line */
     }
     
     .nav > #nav-check {
