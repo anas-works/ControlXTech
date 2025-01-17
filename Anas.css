@@ -840,11 +840,12 @@ body.dark .box-title, body.dark .box-para{
 .port-2{
     width: 100%;
     display: flex;
+    justify-content: center;
     margin-top: 3vw;
     margin-bottom: 3vw;
 }
 .port-left{
-    width: 74.75%;
+    width: 67.5%;
 }
 .port-right{
     width: 23%;
@@ -912,11 +913,11 @@ body.dark .box-title, body.dark .box-para{
 }
 
 .img-right{
-    width: 17.2vw;
+    width: 17.3vw;
     height: fit-content;
 }
 .img-child5{
-    width: 17.2vw;
+    width: 17.3vw;
     height: auto;
 }
 
@@ -927,7 +928,7 @@ body.dark .box-title, body.dark .box-para{
         align-items: center;
     }
     .port-left,.port-right{
-        width: 90%;
+        width: 95%;
     }
     .left-up,.left-down{
         flex-direction: column;
