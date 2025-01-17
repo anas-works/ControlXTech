@@ -500,12 +500,17 @@ body.dark .aboutText{
 .shuffle-cards{
     width: 90vw;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.shuffle{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 .boxes{
-    width: 23vw;
-    height: 30vw;
+    width: 20vw;
+    height: 26vw;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.223) 0px 0px 20px 5px ;
@@ -513,7 +518,7 @@ body.dark .aboutText{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 18%;
+    gap: 10%;
     margin-bottom: 3vw;
     z-index: 1;
     transition: all 0.2s linear;
@@ -567,61 +572,53 @@ body.dark .aboutText{
 }
 
 .box1{
-    transform: translate(4vw, -2vw) rotate(8deg);
+    transform: translate(2vw, -2vw) rotate(8deg);
 }
 .box2{
-    transform: translate(4vw, 8vw) rotate(-12deg);
+    transform: translate(0vw, 5vw) rotate(-8deg);
 }
 .box3{
-    transform: translate(-5vw, 5vw) rotate(10deg);
+    transform: translate(-2vw, 2vw) rotate(10deg);
 }
 .box4{
-    transform: translate(10vw, 0vw) rotate(-10deg);
+    transform: translate(-2vw, 0vw) rotate(-10deg);
 }
 .box5{
-    transform: translate(0vw, 2vw);
-    z-index: 0;
+    transform: translate(-2vw, 2vw) rotate(8deg);
 }
 .box6{
-    transform: translate(-5vw, 10vw) rotate(-10deg);
+    transform: translate(-3vw, -2vw) rotate(-10deg);
 }
 .box7{
-    transform: translate(5vw, 0vw) rotate(10deg);
+    transform: translate(5vw, -4vw) rotate(4deg);
 }
 .box8{
-    transform: translate(-20vw, 0vw) rotate(-10deg);
-    z-index: 0;
+    transform: translate(-2vw, 2vw) rotate(-10deg);
 }
 
 .box1:hover{
-    transform: translate(4vw, -2vw) rotate(0deg);
+    transform: translate(2vw, -2vw) rotate(0deg);
 }
 .box2:hover{
-    transform: translate(4vw, 8vw) rotate(0deg);
+    transform: translate(0vw, 5vw) rotate(0deg);
 }
 .box3:hover{
-    transform: translate(-5vw, 5vw) rotate(0deg);
-    z-index: 10;
+    transform: translate(-2vw, 2vw) rotate(0deg);
 }
 .box4:hover{
-    transform: translate(10vw, 0vw) rotate(0deg);
-    z-index: 10;
+    transform: translate(-2vw, 0vw) rotate(0deg);
 }
 .box5:hover{
-    transform: translate(0vw, 2vw);
-    z-index: 10;
+    transform: translate(-2vw, 2vw) rotate(0deg);
 }
 .box6:hover{
-    transform: translate(-5vw, 10vw) rotate(0deg);
-    z-index: 10;
+    transform: translate(-3vw, -2vw) rotate(0deg);
 }
 .box7:hover{
-    transform: translate(5vw, 0vw) rotate(0deg);
-    z-index: 10;
+    transform: translate(5vw, -4vw) rotate(0deg);
 }
 .box8:hover{
-    transform: translate(-20vw, 0vw) rotate(0deg);
-    z-index: 10;
+    transform: translate(-2vw, 2vw) rotate(0deg);
 }
 .boxes:hover{
     box-shadow: rgba(0, 0, 0, 0.223) 0px 0px 30px 15px ;
@@ -744,10 +741,15 @@ body.dark .aboutText{
     justify-content: space-between;
     align-items: start;
 }
+.vsections{
+    width: 39.3%;
+    display: flex;
+    justify-content: space-between;
+}
 .vCards{
     width: 18.1vw;
     height: 24vw;
-    margin-bottom: 1vw;
+    margin-bottom: 1.2vw;
     border-radius: 20px;
 }
 .imgCard{
@@ -908,5 +910,85 @@ body.dark .aboutText{
     width: 100vw;
 }
 
+@media (max-width:500px) {
+    .vSec-p3{
+        display: none;
+    }
+    .videoInner{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .vsections{
+        justify-content: center;
+        align-items: center;
+        gap: 9%;
+        margin-bottom: 2vw;
+    }
+    .vCard1,.vCard2,.vCard3,.vCard4,.vCard7,.vCard8,.vCard10,.imgCard{
+        width: 44vw;
+        height: 64vw;
+        border-radius: 12px;
+    }
+    .rect-img{
+        width: 100%;
+    }
+    .imgCard2{
+        width: 44vw;
+        height: auto;
+    }
+    .rect-img2{
+        width: 44vw;
+    }
+    .card4Title,.card1Title{
+        gap: 4%;
+        font-size: 4.5vw;
+        margin-top: 3vw;
+    }
+    .contentCard4,.contentCard1{
+        margin-bottom: 4vw;
+    }
+    .headingCard4,.headingCard1{
+        font-size: 7vw;
+        margin-bottom: 2.5vw;
+    }
+    .cont4,.cont1{
+        font-size: 3vw;
+    }
+    .headingCard1{
+        font-size: 12vw;
+    }
+    .cont1,.content4{
+        font-size: 3vw;
+    }
+    .hCard7{
+        font-size: 4vw;
+    }
+    .card4Title{
+        font-size: 2.5vw;
+    }
+    .card10Title{
+        font-size: 4.5vw;
+    }
+    .vCard1,.vCard3,.vCard7,.imgCard2{
+        margin-bottom: 3vw;
+    }
+    .vSec-p1{
+        transform: translateY(0vw);
+    }
+    .vSec-p2{
+        transform: translateY(11vw);
+    }
+    .vSec-p4{
+        transform: translateY(0vw);
+    }
+    .vSec-p5{
+        transform: translateY(0vw);
+    }
 
+
+    .videoSpace{
+        display: none;
+    }
+}
 
