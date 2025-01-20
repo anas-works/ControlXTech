@@ -1656,26 +1656,26 @@ body.dark .aboutText{
     width: 44vw;
     height: 23.5vw;
     border-radius: 2vw;
-    background-color: #c8d1d1;
+    background-color: 	#c1c1c1;
     color: #000;
     display: flex;
     overflow: hidden;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
-.card-1:hover{
+.card-1{
     background-color: #00364B;
     color: #9EFCF1;
 }
 .card-2:hover{
-    background-color: #171717;
+    background-color: #06171D;
     color: white;
 }
 .card-3:hover{
     background-color: #FFFA78;
     color: black;
 }
-.card-4:hover{
-    background-color: #06171D;
+.card-4{
+    background-color: #171717;
     color: white;
 }
 .card:hover .numbers{
