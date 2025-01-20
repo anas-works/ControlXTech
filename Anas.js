@@ -285,9 +285,9 @@ if (window.innerWidth > 500) {
     gsap.to("#br7", {
         scrollTrigger: {
           trigger: ".serv-p2",
-          start: "75% 90%",
+          start: "73% 90%",
           end: "80% 60%",
-          scrub: true,
+        //   scrub: ,
         },
         y: "0vh" ,
         opacity: 1,
@@ -295,9 +295,9 @@ if (window.innerWidth > 500) {
       gsap.to("#bl7", {
         scrollTrigger: {
           trigger: ".serv-p2",
-          start: "75% 90%",
+          start: "73% 90%",
           end: "80% 60%",
-          scrub: true,
+        //   scrub: ,
         },
         x: 0 ,
         rotate: 0,
