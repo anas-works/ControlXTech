@@ -781,7 +781,14 @@ body.dark .box-title, body.dark .box-para{
 }
 
 @media (max-width: 500px) {
-    
+    .serviceSection{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 7vw;
+        padding: 0 9vw;
+    }
     .aboutSection{
         padding: 0 5vw;
     }
@@ -832,6 +839,53 @@ body.dark .box-title, body.dark .box-para{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .box-left{
+        width: 47vw;
+        height: 32vw;
+        overflow: hidden;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        /* border: 1px solid red; */
+        transform: translateX(0vw) rotate(0deg);
+        opacity: 1;
+    }
+    .box-left-inverted{
+        position: absolute;
+        right: 9vw;
+        width: 47vw;
+        height: 32vw;
+        overflow: hidden;
+        overflow-y: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        /* border: 1px solid red; */
+        transform: translateX(0vw) rotate(0deg);
+        opacity: 1;
+    }
+    .box-right{
+        position: absolute;
+        right: 4.5vw;
+        width: 80vw;
+        height: 50vw;
+        border-radius: 20px;
+        opacity: 1;
+        transform: translateY(0vh) translateX(0%);
+    }
+    .box-right-inverted{
+        position: absolute;
+        /* left: 13.5vw; */
+        width: 80vw;
+        height: 50vw;
+        border-radius: 20px;
+        transform: translateY(0vh);
+        opacity: 1;
     }
 }
 
