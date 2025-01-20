@@ -143,6 +143,216 @@ if (window.innerWidth > 500) {
         transform: "translateY(5vw)",
         ease: "sine.inOut",
     });
+
+
+    
+    gsap.to("#br1", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "0% 90%",
+          end: "8% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl1", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "0% 90%",
+          end: "8% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+    
+    gsap.to("#br2", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "9% 90%",
+          end: "20% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl2", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "9% 90%",
+          end: "20% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+    
+    gsap.to("#br3", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "25% 90%",
+          end: "30% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl3", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "25% 90%",
+          end: "30% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+    
+    gsap.to("#br4", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "38% 90%",
+          end: "42% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl4", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "38% 90%",
+          end: "42% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+    
+    gsap.to("#br5", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "50% 90%",
+          end: "55% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl5", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "50% 90%",
+          end: "55% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+    
+    gsap.to("#br6", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "63% 90%",
+          end: "68% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl6", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "63% 90%",
+          end: "68% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+    
+    gsap.to("#br7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "75% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "75% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+    
+    gsap.to("#br8", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "90% 90%",
+          end: "95% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl8", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "90% 90%",
+          end: "95% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+    
+    gsap.to("#br7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "75% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        y: "0vh" ,
+        opacity: 1,
+      });
+      gsap.to("#bl7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "75% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+
+
+
     
     const splitTypes = document.querySelectorAll('.aPara1');
     
