@@ -502,6 +502,53 @@ if (window.innerWidth > 500) {
             });
             
             
+}else if(window.innerWidth < 500){
+    
+    gsap.to(".card-1", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "-10% 90%",
+          end: "10% center",
+          scrub: true,
+          // markers:true
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+      gsap.to(".card-2", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "70% 90%",
+          end: "50% 30%",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+      gsap.to(".card-3", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "30% 90%",
+          end: "30% center",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+      gsap.to(".card-4", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "90% 90%",
+          end: "80% center",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
 }
 
 
