@@ -352,6 +352,56 @@ if (window.innerWidth > 500) {
 
 
 
+      
+
+      gsap.to(".card-1", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "-10% 90%",
+          end: "30% center",
+          scrub: true,
+          // markers:true
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+      gsap.to(".card-2", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "20% 90%",
+          end: "30% center",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+      gsap.to(".card-3", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "40% 90%",
+          end: "50% center",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+      gsap.to(".card-4", {
+        scrollTrigger: {
+          trigger: ".acheive",
+          start: "70% 90%",
+          end: "80% center",
+          scrub: true,
+        },
+        x: 0 ,
+        rotate: 0,
+        opacity: 1,
+      });
+
+
+
 
     
     const splitTypes = document.querySelectorAll('.aPara1');
