@@ -910,7 +910,7 @@ body.dark .box-title, body.dark .box-para{
         justify-content: center;
         align-items: center;
         margin-bottom: 7vw;
-        padding: 0 9vw;
+        padding: 0 0vw;
     }
     .aboutSection{
         padding: 0 5vw;
@@ -919,22 +919,24 @@ body.dark .box-title, body.dark .box-para{
         display: block;
     }
     .innerServ{
-        width: 95%;
+        width: 90%;
     }
     .serv-p1{
         justify-content: space-between;
     }
     .serv-p1 h1{
-        font-size: 7.5vw;
+        font-size: 8vw;
+        line-height: 7.5vw;
     }
     .hr-servP1{
-        width: 25%;
+        width: 30%;
         height: 0.35vw;
     }
     .serv-box{
         width: 100%;
-        flex-direction: column !important;
+        flex-direction: column;
         justify-content: center;
+        margin-bottom: 2vw;
     }
     .box-left{
         width: 100%;
@@ -965,8 +967,9 @@ body.dark .box-title, body.dark .box-para{
     }
 
     .box-left{
-        width: 47vw;
-        height: 32vw;
+        position: relative;
+        width: 100%;
+        height: 40%;
         overflow: hidden;
         overflow-y: hidden;
         display: flex;
@@ -978,10 +981,10 @@ body.dark .box-title, body.dark .box-para{
         opacity: 1;
     }
     .box-left-inverted{
-        position: absolute;
-        right: 9vw;
-        width: 47vw;
-        height: 32vw;
+        position: relative;
+        right: 0vw;
+        width: 100%;
+        height: 40%;
         overflow: hidden;
         overflow-y: hidden;
         display: flex;
@@ -993,23 +996,29 @@ body.dark .box-title, body.dark .box-para{
         opacity: 1;
     }
     .box-right{
-        position: absolute;
-        right: 4.5vw;
+        position: relative;
+        right: 0vw;
         width: 80vw;
         height: 50vw;
         border-radius: 20px;
         opacity: 1;
-        transform: translateY(0vh) translateX(0%);
+        transform: translateY(-5vh) translateX(0%);
     }
     .box-right-inverted{
-        position: absolute;
-        /* left: 13.5vw; */
+        position: relative;
         width: 80vw;
         height: 50vw;
         border-radius: 20px;
-        transform: translateY(0vh);
+        transform: translateY(-5vh);
         opacity: 1;
     }
+    .serv-invert{
+        flex-direction: column-reverse;
+    }
+    .img-serv{
+        width: 100%;
+    }
+
 }
 
 
