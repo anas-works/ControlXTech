@@ -64,10 +64,11 @@ html{
 /* Logo */
 .header-left-container img{
     width: 15vw;
-    animation: headerStarter 1.5s ease-in 0.5s;
-
+    opacity: 0; /* Initially invisible */
+    animation: headerStarter 0.5s ease-in 0.5s forwards;
     /* margin-top: -0.8vw; */
 }
+
 
 .header-right-container{
     width: 70%;
@@ -114,7 +115,8 @@ html{
     will-change: transform,opacity;
     z-index: 0;
     margin-bottom: -1.1vw;
-    animation: headerStarter 1.5s ease-in;
+    opacity: 0; /* Initially invisible */
+    animation: headerStarter 1.5s ease-in 0.5s forwards;
   }
   
   .button-17:hover {
@@ -197,6 +199,8 @@ html{
     .nav > .nav-links {
       display: inline;
       float: right;
+      opacity: 0; /* Initially invisible */
+      animation: headerStarter 0.5s ease-in 0.2s forwards;    
       font-size: 18px;
     }
     
@@ -210,7 +214,8 @@ html{
       position: relative; /* Needed for the pseudo-element */
       transition: all 0.3s ease; /* Smooth transition */
       /* border: 1px solid red; */
-      animation: headerStarter 1.5s ease-in ;
+      opacity: 0; /* Initially invisible */
+      animation: headerStarter 0.5s ease-in 1s forwards;    
     }
     
     .nav > .nav-links > a::after {

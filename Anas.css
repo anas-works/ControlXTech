@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: "Inter", serif;
 }
+a, button, img{
+    cursor: none;
+}
 :root{
     --primaryFont: "Inter", serif;
     --secondaryFont: "Montserrat", sans-serif, serif;
@@ -33,15 +36,23 @@ html{
 
 
 body {
-  cursor: none;                /*hiding cursor*/
+  cursor: none;
   background: var(--Main-Color);
-  transition: background 0.2s linear;
+  transition: all 0.2s linear;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
+.parallax-image {
+    position: absolute;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.1s ease-out; /* Smooth movement */
+    will-change: transform; /* Optimize rendering */
+  }
+  
 
     /* Custom cursor outer circle */
     .custom-cursor-circle {
@@ -182,7 +193,7 @@ body.dark .ball{
 
 
 h1 {
-    font-family: "Montserrat Medium";
+    /* font-family: "Montserrat Medium"; */
     max-width: 40ch;
     text-align: center;
     transform: scale(0.94);
@@ -300,25 +311,30 @@ h1 {
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    transition: transform 0.2s ease; /* Smooth movement */
-    /* border: 1px solid red; */
+    opacity: 0; /* Start hidden */
+    transform: scale(2) translate(-5vw, -7vw); /* Initial state for animation */
+    will-change: transform, opacity; /* Optimize for animation */
 }
+
 .video {
     width: 21vw;
     height: 21vw;
-  position: relative;
-  left: 0;
-  opacity: 1;
+    position: relative;
+    left: 0;
 }
 
-@keyframes hero_Videos_and_images_on_startup{
-    0%{
-        
+@keyframes hero_Videos_and_images_on_startup {
+    from {
+        opacity: 0;
+        transform: scale(2) translate(-5vw, -7vw); /* Start from bigger size and position */
     }
-    100%{
-
+    to {
+        opacity: 1;
+        transform: scale(1) translate(0, 0); /* End at original size and position */
     }
 }
+
+
 
 
 /* .img-bottom, .img-right{
@@ -361,6 +377,8 @@ h1 {
     position: absolute;
     bottom: 7vw;
     transition: all 0.5s ease;
+    opacity: 0; /* Initially invisible */
+    animation: headerStarter 0.5s ease-in 1.5s forwards;
 }
 .arrow-circle:hover{
     transform: scale(1.2);
@@ -414,7 +432,7 @@ h1 {
 .aboutInner{
     width: 80%;
 }
-.aboutUp{
+/* .aboutUp{
     width: 70%;
     height: 50vh;
     font-size: 3vw;
@@ -426,7 +444,21 @@ h1 {
 }
 .aboutUp h1{
     font-family: var(--secondaryFont);
+} */
+
+.animate-on-scroll {
+    opacity: 0; /* Start fully invisible */
+    transform: translateY(50px); /* Start slightly below its final position */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+    will-change: opacity, transform; /* Optimize for performance */
 }
+
+.animate-on-scroll.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to its original position */
+}
+
+
 .aboutDown{
     width: 95%;
     display: flex;
@@ -757,6 +789,7 @@ h1 {
     width: 100vw;
 }
 .serv-p1{
+    font-weight: 800;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -836,6 +869,7 @@ h1 {
     width: 45vw;
     height: 27vw;
     backdrop-filter: blur(15px);
+    background-color: #ffffff23;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -854,6 +888,7 @@ h1 {
     transform: translateX(-10%);
     height: 27vw;
     backdrop-filter: blur(15px);
+    background-color: #ffffff2b;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -869,7 +904,7 @@ h1 {
 .box-title{
     width: 100%;
     font-size: 3.5vw;
-    font-family: var(--primaryFont);
+    font-family: var(--secondaryFont);
     font-weight: 800;
     margin-top: -0.5vw;
 }
@@ -1717,6 +1752,11 @@ body.dark .aboutText{
 
 
 /* LOGOS SECTION */
+
+.m-8{
+    margin: 7.5vw 0 !important;
+}
+
 .logosSection{
     width: 100vw;
     display: flex;
@@ -1725,16 +1765,19 @@ body.dark .aboutText{
     flex-direction: column;
 }
 .logoHeading{
-    width: 50%;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: var(--secondaryFont);
-    font-size: 2.5vw;
-    font-weight: 800;
+    font-size: 4vw;
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    line-height: 5vw;
+    margin-top: -0.5vw;
+    margin-bottom: 3vw;
+    /* text-align: center; */
 }
+.text-center{
+    text-align: center;
+}
+
+
 .logoInner{
     width: 95%;
     height: 20vw;
@@ -1757,7 +1800,17 @@ body.dark .aboutText{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0; /* Fully transparent initially */
+  transform: translateY(50px); /* Move down by 50px initially */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
 }
+/* When in view, apply this class */
+.logoBoxes.animate {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Return to original position */
+  }
+
+  
 .logosHr{
     /* background-color: rgba(74, 74, 74, 0); */
     height: 4.5vw;
@@ -1765,9 +1818,10 @@ body.dark .aboutText{
     rotate: 25deg;
 }
 .innerLogoBox{
-    width: 50%;
+    width: 30vw;
     height: auto;
-}
+    mix-blend-mode: multiply;
+    filter: contrast(1);}
 .logoMobile{
     display: none;
 }
