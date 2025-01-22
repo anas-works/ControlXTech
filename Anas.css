@@ -1851,14 +1851,21 @@ body.dark .aboutText{
 }
 
 @media (max-width: 500px) {
-    .logoDesktops{
+    hr{
         display: none;
+    }
+    .logoDesktops{
+        /* display: none; */
+        /* overflow-x: hidden; */
+        min-height: 100vh;
+        flex-direction: row;
+        width: 30vw;
+        
     }
     .logoMobile{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: column;
     }
     .logoInner{
         height: 60vw;
@@ -1866,10 +1873,17 @@ body.dark .aboutText{
     .logoHeading{
         width: 85%;
         height: 40vw;
-        font-size: 6vw;
+        font-size: 8.3vw;
         display: flex;
         justify-content: center;
         align-items: center;
+        line-height: 10.5vw;
+        text-align: left;
+        margin-top: -10vh !important;
+    }
+    .mb-mob{
+        margin-bottom: 10vw;
+        width: 80vw;
     }
     .logoBoxes{
         width: 40%;
