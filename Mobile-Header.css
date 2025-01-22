@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+    --primaryFont: "Inter", serif;
+    --secondaryFont: "Montserrat", sans-serif, serif;
+    --Orange: #e3720f;
+    --Main-Color: #EBECE7;
+}
+
+.nav-mob {
+    display: none !important;
+    /* height: 10vh; */
+    width: 100vw;
+    /* background-color: #1A237E; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+  }
+  .nav-mob > .nav-header-mob {
+    width: 100vw;
+    flex: 0.95;
+    padding-left: 1rem;
+  }
+  .nav-mob > .nav-header-mob > .nav-logo-mob {
+    width: 45vw;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 9vw;
+      top: 7.5vw;
+    /* top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); */
+      z-index: 2000;
+
+  }
+  .nav-mob > .nav-list-mob {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-mob > .nav-list-mob > li {
+    list-style-type: none;
+  }
+  .nav-mob > .nav-list-mob > li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+  .nav-mob > #nav-check-mob {
+      display: none;
+  }
+  .spacer{
+    height: 15vh;
+  }
+  @media (max-width: 500px) {
+
+    .Hero-Section{
+        min-height: 60vh;
+        margin: 0 !important;
+    }
+    
+    .UpperText{
+        width: 79vw;
+        font-size: 10vw;
+        line-height: 10vw;
+        text-align: left;
+        margin-bottom: 4vw;
+        margin-top: -35vh;
+    }
+    .LowerText{
+        width: 100vw;
+        padding: 0 0 0 4vw;
+
+        font-size: 3.3vw;
+        line-height: 5vw;
+        text-align: left;
+
+    }
+
+    .arrow-circle{
+        bottom: 5%;
+        width: 10vw;
+    height: 10vw;
+    }
+    .arrow-circle img{
+        width: 50%;
+    }
+
+    .video-mob-container{
+        margin-top: 30vh;
+        display: inline-block;
+        width: 100vw;
+        height: 30vh;
+        overflow: hidden;
+    }
+    .video-mob-container video{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* ---------------- about */
+    .animate-on-scroll h1{
+        text-align: left !important;
+    }
+
+
+    /* ----------------- nav */
+
+    .nav-mob {
+        display: inline-block !important;
+      padding: 1rem;
+    }
+    .nav-mob > .nav-btn-mob {
+      display: inline-block;
+      position: absolute;
+      right: 8vw;
+      top: 11vw;
+      padding-top: 0.2rem;
+    }
+    .nav-mob > .nav-mob-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav-mob > .nav-btn-mob > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #000;
+      position: relative;
+      z-index: 2000;
+    }
+    
+    .nav-mob > .nav-list-mob {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 15vw;
+      width: 100vw;
+      /* background-color: rgb(246, 246, 246); */
+      background: linear-gradient(#ffffff 86%, #dedede00);
+            /* background: linear-gradient(rgba(246, 246, 246,50%)); */
+      /* background:linear-gradient(0deg, #e7e7e7c1, #e7e7e7c1), url(https://www.pixcrafter.com/wp-content/uploads/2023/12/satin-cloth-background.jpg);
+      background-size:cover; */
+      height: 0;
+      opacity: 0;
+      transition: all 0.3s ease-in;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    z-index: 900 !important;
+    padding: 0 11vw;
+    }
+    .nav-mob > .nav-list-mob > li {
+        font-size: 6vw;
+      width: 100%;
+      /* margin-top: 2.5rem; */
+      text-align: left;
+      font-family: var(--primaryFont) !important;
+      font-weight: 500;
+
+    }
+    .nav-mob > #nav-check-mob:checked ~ .nav-list-mob {
+      height: 100vh;
+      opacity: 1;
+    }
+
+
+
+
+
+    .parallax-image{
+        display: none !important;
+    }
+  }

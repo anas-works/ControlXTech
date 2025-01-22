@@ -35,6 +35,12 @@ html{
 
   
   /* HEADER SECTION */
+
+
+  #header-1{
+    display: none !important;
+  }
+  
   
   header{
     min-height: 12vh;
@@ -241,8 +247,26 @@ html{
     .nav > #nav-check {
       display: none;
     }
+
+
     
     @media (max-width:600px) {
+
+      body, .Hero-Section{
+        width: 100vw !important;
+        overflow-x: hidden !important;
+      }
+
+      .header{
+        display: none !important;
+      }
+      
+
+      .custom-cursor-circle, .inner-dot{
+        display: none !important;
+      }
+
+
       .nav > .nav-btn {
         display: inline-block;
         position: absolute;
