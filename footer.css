@@ -7,6 +7,7 @@
     --secondaryFont: "Montserrat", sans-serif, serif;
     --Orange: #e3720f;
     --Main-Color: #EBECE7;
+    --DarkBG: #06171D;
 }
 
 /* FOOTER */
@@ -123,11 +124,11 @@
     text-decoration: none;
     color: #000;
 }
-.lower{
+.lower p{
     font-family: var(--primaryFont);
     font-size: 1.2vw;
     text-decoration: none;
-    color: #495558;
+    color: var(--DarkBG);
 
 }
 .lowerS3{
@@ -388,7 +389,7 @@
     left: 0;
     width: 0;
     height: 1px; /* Line thickness */
-    background-color: #000; /* Line color */
+    background-color: var(--pseudo-color, #000); /* Default color  (Line Color) */
     transition: width 0.3s ease; /* Smooth animation */
     margin-left: 1.5vw;
 
