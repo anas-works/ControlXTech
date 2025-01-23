@@ -23,7 +23,7 @@ document.addEventListener("mousemove", (event) => {
 
 
 
-  // Videos & Images
+    //-------------------- Starter Animation on Videos & Images
 
   document.addEventListener("DOMContentLoaded", () => {
     const outerElements = document.querySelectorAll(".outer");
@@ -62,7 +62,8 @@ document.addEventListener("mousemove", (event) => {
       animateOuterElement(outerElement);
     });
   });
-  
+    //-------------------- Starter Animation on Videos & Images
+
 
 
 
@@ -78,9 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("in-view"); // Add "in-view" when in view
-        } else {
-          entry.target.classList.remove("in-view"); // Remove "in-view" when out of view
-        }
+        } 
+        // else {
+        //   entry.target.classList.remove("in-view"); // Remove "in-view" when out of view
+        // }
       });
     },
     { threshold: 1 } // Trigger when 20% of the element is visible
@@ -90,8 +92,13 @@ document.addEventListener("DOMContentLoaded", () => {
   elementsToAnimate.forEach((element) => observer.observe(element));
 });
 
+  // -------------------- Text Animation
 
-// ---------------------- Logos
+  
+
+
+
+// ---------------------- Logos Animation
 document.addEventListener("DOMContentLoaded", () => {
   const logoBoxes = document.querySelectorAll(".logoBoxes");
 
@@ -115,47 +122,352 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(logoBox);
   });
 });
-
-
-  
-
-
-// Dark Mode Toggle
-
-// Dark Mode Toggle
+// ---------------------- Logos Animation
 
 
 
-
-
-//   gsap
+// ------------------------------------Toggle Button Animation
+// GSAP and ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
+// Select the toggle button, icon, and container
+const modeToggleButton = document.getElementById("dark-mode-toggle");
+const toggleIcon = document.getElementById("toggle-icon");
+const toggleBtnContainer = document.getElementById("toggle-btn-container");
 
+// Track the dark mode state
+let isDarkModeActive = false;
 
+// Function to activate dark mode
+const activateDarkMode = () => {
+  isDarkModeActive = true;
+  document.body.classList.add("dark-mode");
+  toggleBtnContainer.style.backgroundColor = "#EBECE7"; // Dark background for the container
 
-// footer BG color change
-gsap.to("body", {
-  scrollTrigger: {
-      trigger: "footer",
-      start: "45% 50%",
-      end: "45% 50%",
-      scrub: true,
-      // markers: true,
+  // Update toggle button icon
+  toggleIcon.textContent = "🌙"; // Moon for dark mode
+};
+
+// Function to deactivate dark mode
+const deactivateDarkMode = () => {
+  isDarkModeActive = false;
+  document.body.classList.remove("dark-mode");
+  toggleBtnContainer.style.backgroundColor = "#06171D"; // Light background for the container
+
+  // Update toggle button icon
+  toggleIcon.textContent = "☀️"; // Sun for light mode
+};
+
+// Function to toggle dark mode
+const toggleMode = () => {
+  if (isDarkModeActive) {
+    deactivateDarkMode();
+  } else {
+    activateDarkMode();
+  }
+};
+
+// Add event listener to the toggle button
+modeToggleButton.addEventListener("click", toggleMode);
+
+// GSAP ScrollTrigger for the footer
+ScrollTrigger.create({
+  trigger: "footer",
+  start: "45% center",
+  markers: true,
+
+  onEnter: () => {
+    // Toggle the mode when footer is reached
+    if (isDarkModeActive) {
+      deactivateDarkMode();
+    } else {
+      activateDarkMode();
+    }
   },
-  backgroundColor: "#06171D"
-});
-// All text color change
-gsap.to("h1, a, p" ,{
-  scrollTrigger: {
-      trigger: "footer",
-      start: "45% 50%",
-      end: "45% 50%",
-      scrub: true,
-      markers: true,
+
+  onLeaveBack: () => {
+    // Toggle the mode when leaving the footer
+    if (isDarkModeActive) {
+      deactivateDarkMode();
+    } else {
+      activateDarkMode();
+    }
   },
-  color: "#fff"
 });
+
+// -----------------------Starter Button Animation
+window.addEventListener("load", () => {  // Ensure it runs after the page is fully loaded
+  gsap.to("#toggle-btn-container", {
+    opacity: 1,  // Fade in to full opacity
+    x: 0,        // Move to the original position (0px)
+    duration: 0.3,  // Animation duration
+    delay: 1.4,     // 1-second delay before the animation starts
+    ease: "power3.out"  // Smooth easing effect
+  });
+});
+
+
+
+// ------------------------------------Toggle Button Animation
+
+
+// ---------------------------------------------------------------------------------Dark Mode GSAP
+
+// Toggle JS
+// GSAP and ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
+// Select the toggle button
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+ // Select the images by ID's
+ const logoHeader_1 = document.getElementById("Logo-Footer-1");
+ const logoHeader_2 = document.getElementById("Logo-Footer-2");
+ const logoFooter = document.getElementById("Logo-Footer-3");
+      //  ------------------------------Footer ICONS
+ const location_Icon_Footer = document.getElementById("location-icon");
+ const YT_Icon_Footer = document.getElementById("YT-icon");
+ const FB_Icon_Footer = document.getElementById("FB-icon");
+ const INSTA_Icon_Footer = document.getElementById("INSTA-icon");
+ const LinkedIN_Icon_Footer = document.getElementById("LinkedIn-icon");
+ const Tiktok_Icon_Footer = document.getElementById("TIKTOK-icon");
+     //  ------------------------------Footer ICONS
+
+// Track the dark mode state
+let isDarkMode = false; // Global state to manage dark mode
+
+// Function to apply dark mode
+const enableDarkMode = () => {
+  isDarkMode = true; // Update state
+  document.body.classList.add("dark-mode");
+
+  // Update images to dark mode
+  logoHeader_1.src = "anas-assets/Logo-cxt.webp";
+  logoHeader_2.src = "anas-assets/Logo-cxt.webp";
+  logoFooter.src = "anas-assets/Logo-cxt.webp";
+
+  location_Icon_Footer.src = "anas-assets/location.png";
+  YT_Icon_Footer.src = "anas-assets/youtube-white.svg";
+  FB_Icon_Footer.src = "anas-assets/facebook-white.svg";
+  INSTA_Icon_Footer.src = "anas-assets/instagram-white.svg";
+  LinkedIN_Icon_Footer.src = "anas-assets/linkedin-white.svg";
+  Tiktok_Icon_Footer.src = "anas-assets/tiktok-white.svg";
+};
+
+// Function to disable dark mode
+const disableDarkMode = () => {
+  isDarkMode = false; // Update state
+  document.body.classList.remove("dark-mode");
+
+  // Update images to light mode
+  logoHeader_1.src = "anas-assets/CXT-Logo-Light.png";
+  logoHeader_2.src = "anas-assets/CXT-Logo-Light.png";
+  logoFooter.src = "anas-assets/CXT-Logo-Light.png";
+
+  location_Icon_Footer.src = "https://img.icons8.com/ios/50/marker--v1.png";
+  YT_Icon_Footer.src = "anas-assets/youtube.svg";
+  FB_Icon_Footer.src = "anas-assets/facebook-tag.svg";
+  INSTA_Icon_Footer.src = "anas-assets/instagram.svg";
+  LinkedIN_Icon_Footer.src = "anas-assets/linkedin.svg";
+  Tiktok_Icon_Footer.src = "anas-assets/tiktok.svg";
+};
+
+// Toggle dark mode on button click
+darkModeToggle.addEventListener("click", () => {
+  if (isDarkMode) {
+    disableDarkMode();
+  } else {
+    enableDarkMode();
+  }
+});
+
+// GSAP ScrollTrigger for the footer
+ScrollTrigger.create({
+  trigger: "footer", // Target the footer
+  start: "45% center", // Trigger when the top of the footer reaches the center of the viewport
+  markers: true,
+
+  onEnter: () => {
+    // Toggle the mode when footer is reached
+    if (isDarkMode) {
+      disableDarkMode(); // Switch to light mode if currently in dark mode
+    } else {
+      enableDarkMode(); // Switch to dark mode if currently in light mode
+    }
+  },
+
+  onLeaveBack: () => {
+    // Toggle the mode when leaving the footer
+    if (isDarkMode) {
+      disableDarkMode(); // Switch to light mode if currently in dark mode
+    } else {
+      enableDarkMode(); // Switch to dark mode if currently in light mode
+    }
+  },
+});
+
+
+// Toggle JS
+  
+ // ---------------------------------------------------------------------------------Dark Mode GSAP
+
+
+
+ 
+
+
+
+
+ // ---------------------------------------------------------------------------------Dark Mode GSAP
+
+// //   gsap
+// gsap.registerPlugin(ScrollTrigger);
+
+
+
+//  // Select the images by ID's
+//  const logoHeader_1 = document.getElementById("Logo-Footer-1");
+//  const logoHeader_2 = document.getElementById("Logo-Footer-2");
+//  const logoFooter = document.getElementById("Logo-Footer-3");
+//       //  ------------------------------Footer ICONS
+//  const location_Icon_Footer = document.getElementById("location-icon");
+//  const YT_Icon_Footer = document.getElementById("YT-icon");
+//  const FB_Icon_Footer = document.getElementById("FB-icon");
+//  const INSTA_Icon_Footer = document.getElementById("INSTA-icon");
+//  const LinkedIN_Icon_Footer = document.getElementById("LinkedIn-icon");
+//  const Tiktok_Icon_Footer = document.getElementById("TIKTOK-icon");
+//      //  ------------------------------Footer ICONS
+
+//  // Change background, font color, and logo when the footer is in view
+//  ScrollTrigger.create({
+//    trigger: "footer", // Target the footer
+//    start: "45% center", // Trigger when the top of the footer reaches the center of the viewport
+//    markers: true,
+
+
+//      //  -------------------------------------------------------- DARK
+
+//    onEnter: () => {
+//      // Change body styles
+//      gsap.to("body", { backgroundColor: "#06171D", color: "#fff", duration: 0.1 });
+     
+
+//      // Change the images
+//      //  ------------------------------LOGOS
+//      logoHeader_1.src = "anas-assets/Logo-cxt.webp"; //  logo Header Mobile
+//      logoHeader_2.src = "anas-assets/Logo-cxt.webp"; //  logo Header Desktop
+//      logoFooter.src = "anas-assets/Logo-cxt.webp"; //  logo Footer
+
+//     //  ------------------------------Clients
+//     // client_1.src = "anas-assets/Black-Logos-Client/1.png"; //  Client-1
+
+//     //  ------------------------------Footer ICONS
+//      location_Icon_Footer.src = "anas-assets/location.png"; //  //  Footer Location ICON
+//      YT_Icon_Footer.src = "anas-assets/youtube-white.svg"; //  //  Footer YT ICON
+//      FB_Icon_Footer.src = "anas-assets/facebook-white.svg"; //  //  Footer FB ICON
+//      INSTA_Icon_Footer.src = "anas-assets/instagram-white.svg"; //  //  Footer INSTA ICON
+//      LinkedIN_Icon_Footer.src = "anas-assets/linkedin-white.svg"; //  //  Footer LINKED_IN ICON
+//      Tiktok_Icon_Footer.src = "anas-assets/tiktok-white.svg"; //  //  Footer TIKTOK ICON
+//      // Change the images
+
+//      // Change anchor colors
+//     gsap.to("a", { color: "#fff", borderColor: "#fff", duration: 0.1 });
+
+//       // Change the pseudo-element color
+//       document.documentElement.style.setProperty('--pseudo-color', '#fff');
+
+//     // Change button border color
+//     gsap.to("button", { borderColor: "#fff", duration: 0.1 });
+    
+//    },
+//   //  ------------------------------------------------------------ LIGHT
+//    onLeaveBack: () => {
+//      // Revert body styles
+//      gsap.to("body", { backgroundColor: "#ffffff", color: "#000", duration: 0.1 });
+
+//      // Revert to the light-mode logo
+
+//      // Change the images
+//           //  ------------------------------LOGOS
+//      logoHeader_1.src = "anas-assets/CXT-Logo-Light.png"; //  logo Header Mobile
+//      logoHeader_2.src = "anas-assets/CXT-Logo-Light.png"; //  logo Header Desktop
+//      logoFooter.src = "anas-assets/CXT-Logo-Light.png"; //  logo Footer
+     
+//      //  ------------------------------Footer ICONS
+//      location_Icon_Footer.src = "https://img.icons8.com/ios/50/marker--v1.png"; //  Footer Location ICON
+//      YT_Icon_Footer.src = "anas-assets/youtube.svg"; //  //  Footer YT ICON
+//      FB_Icon_Footer.src = "anas-assets/facebook-tag.svg"; //  //  Footer FB ICON
+//      INSTA_Icon_Footer.src = "anas-assets/instagram.svg"; //  //  Footer INSTA ICON
+//      LinkedIN_Icon_Footer.src = "anas-assets/linkedin.svg"; //  //  Footer LINKED_IN ICON
+//      Tiktok_Icon_Footer.src = "anas-assets/tiktok.svg"; //  //  Footer TIKTOK ICON
+//     //  ------------------------------Footer ICONS
+//     // Change the images
+
+     
+
+
+     
+//     // Revert anchor colors
+//     gsap.to("a", { color: "#000", borderColor: "#000", duration: 0.1 });
+
+//     // Revert the pseudo-element color
+//     document.documentElement.style.setProperty('--pseudo-color', '#000');
+
+//     // Revert button border color
+//     gsap.to("button", { borderColor: "#000", duration: 0.1 });
+//    },
+//  });
+
+//  // ---------------------------------------------------------------------------------Dark Mode GSAP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // footer BG color change
+// gsap.to("body", {
+//   scrollTrigger: {
+//       trigger: "footer",
+//       start: "45% 50%",
+//       end: "45% 50%",
+//       scrub: true,
+//       // markers: true,
+//   },
+//   backgroundColor: "#06171D"
+// });
+// // All text color change
+// gsap.to("h1, a, p" ,{
+//   scrollTrigger: {
+//       trigger: "footer",
+//       start: "45% 50%",
+//       end: "45% 50%",
+//       scrub: true,
+//       markers: true,
+//   },
+//   color: "#fff"
+// });
 
 
 
