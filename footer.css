@@ -119,7 +119,7 @@
 .mail{
     font-size: 1.8vw;
     font-family: var(--primaryFont);
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: none;
     color: #000;
 }
@@ -139,8 +139,13 @@
     text-decoration: none;
     color: #000;
     font-family: var(--primaryFont);
+    transition: all 0.5s ease;
 
 
+}
+.lowerS3:hover{
+    color: green;
+    transform: scale(1.15);
 }
 .upperS3{
     display: flex;
@@ -159,6 +164,7 @@
     border: 1.5px solid black;
 
 }
+
 .icns{
     width: 2vw;
     height: 2vw;
@@ -179,21 +185,31 @@
     height: 60%;
     width: 25%;
     justify-content: space-between;
-    /* border: 1px solid yellow; */
+    /* gap: 1vw; */
+    
+    
+    
+
+  /* border: 1px solid yellow; */
 
 }
 .S2-a{
     text-decoration: none;
     font-family: var(--primaryFont);
-    font-weight: 800;
     color: #000;
-    font-size: 1.6vw;
     text-wrap: nowrap;
+    font-weight: 700;
+    font-size: 1.6vw;
+}
+.s2Heading p{
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    font-size: 1.5vw;
 }
 .s2Heading{
     font-family: var(--primaryFont);
-    font-weight: 800;
-    font-size: 1.3vw;
+    font-weight: 700;
+    font-size: 1.5vw;
 }
 .S2Left{
     height: 30%;
@@ -210,7 +226,7 @@
 .footerSocial{
     display: flex;
     justify-content: space-between;
-    gap: 0.3vw;
+    gap: 0vw;
     align-items: center;
     width: 80%;
 }
@@ -279,3 +295,121 @@
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------Footer (CHEEMA)-------------------- */
+
+.Actual-Footer{
+    /* margin-top: -4vw; */
+    width: 100vw;
+    height: 40vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+}
+.footer-container{
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.footer-container-1{
+    width: 20%;
+}
+.footer-container-2{
+    width: 35%;
+}
+.footer-container-3{
+    width: 20%;
+}
+.footer-container-4{
+    width: 25%;
+}
+.Logo-Footer{
+    width: 17vw;
+}
+
+.S2Right-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25vw;
+}
+
+
+.S2Right > a {
+    width: auto;
+    display: inline-block;
+    padding: 13px 1.5vw;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    position: relative; /* Needed for the pseudo-element */
+    transition: all 0.3s ease; /* Smooth transition */
+    font-size: 1.8vw;
+  }
+  
+.S2Right > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px; /* Line thickness */
+    background-color: #000; /* Line color */
+    transition: width 0.3s ease; /* Smooth animation */
+    margin-left: 1.5vw;
+
+  }
+  
+ .S2Right > a:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .S2Right > a:hover::after {
+    width: 100%; /* Expand the line */
+  }
+
+/* -----------------------------------------------Footer (CHEEMA)-------------------- */
+
+
+
+
+
+/* ---------------------------------------------- Dark Mode */
+
+
+/* ---------------------------------------------- Dark Mode */

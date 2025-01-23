@@ -173,12 +173,45 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
 
+// Dark Mode Toggle
+
+// Dark Mode Toggle
+
 
 
 
 
 //   gsap
 gsap.registerPlugin(ScrollTrigger);
+
+
+
+
+// footer BG color change
+gsap.to("body", {
+  scrollTrigger: {
+      trigger: "footer",
+      start: "45% 50%",
+      end: "45% 50%",
+      scrub: true,
+      // markers: true,
+  },
+  backgroundColor: "#06171D"
+});
+// All text color change
+gsap.to("h1, a, p" ,{
+  scrollTrigger: {
+      trigger: "footer",
+      start: "45% 50%",
+      end: "45% 50%",
+      scrub: true,
+      markers: true,
+  },
+  color: "#fff"
+});
+
+
+
 
 if (window.innerWidth > 500) {
     

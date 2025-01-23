@@ -297,15 +297,16 @@ h1 {
 
 @media (min-width:800px){
     .LowerText{
-        width: 60vw !important;
+        min-width: 55vw !important;
+        border: 1px solid red;
     }
     
 }
 
 
 .LowerText{
-    font-size: 1.8vw;
-    line-height: 2.3vw;
+    font-size: 1.6vw;
+    line-height: 2.2vw;
     font-weight: 400;
     text-align: center;
     font-family: var(--secondaryFont);
@@ -1799,6 +1800,15 @@ body.dark .aboutText{
     margin-top: -0.5vw;
     margin-bottom: 3vw;
     /* text-align: center; */
+}
+.logoHeading h1{
+    font-size: 4vw;
+    font-family: var(--primaryFont);
+    font-weight: 700;
+    line-height: 5vw;
+    margin-top: -0.5vw;
+    margin-bottom: 3vw;
+    text-align: center;
 }
 .text-center{
     text-align: center;
