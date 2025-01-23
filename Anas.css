@@ -1123,16 +1123,15 @@ body.dark .box-title, body.dark .box-para{
     margin-right: 2vw;
 }
 .imgs-up2{
-    width: 22.9vw;
-    /* height: fit-content; */
-    /* border: 1px solid red; */
-    background-image: url(anas-assets/Portfolio-Thumbnail/EcoDest.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: 22.8vw;
+    height: 19.5vw;
+    /* border: 1px solid red;   */
+    /* background-size: contain; */
+    /* background-image: url(anas-assets/Portfolio-Thumbnail/EcoDest.png); */
+    /* background-size: contain;
+    background-repeat: no-repeat; */
 }
-.imgs-up2 > img{
-display: none;
-}
+
 .imgs-down1{
     margin-right: 2vw;
     width: 22vw;
