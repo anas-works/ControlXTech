@@ -295,8 +295,12 @@ h1 {
   }
   
 
-
-
+@media (min-width:800px){
+    .LowerText{
+        width: 60vw !important;
+    }
+    
+}
 
 
 .LowerText{
@@ -328,7 +332,7 @@ h1 {
 
 
 .video-mob-container{
-    display: none;
+    display: none !important;
 }
 
 @keyframes hero_Videos_and_images_on_startup {
