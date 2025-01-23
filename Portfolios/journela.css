@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+a, button, img{
+    cursor: none;
+}
+:root{
+    --primaryFont: "Inter", serif;
+    --secondaryFont: "Montserrat", sans-serif, serif;
+    --Orange: #e3720f;
+    --Main-Color: #EBECE7;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    display: none;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    display: none;
+}
+
+
+
+
+body {
+  cursor: none;
+  background: #000000 !important;
+  transition: all 0.2s linear;
+  margin: 0;
+  padding: 0;
+  /* max-width: 100vw !important; */
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+.img-portfolio{
+    width: 100vw;
+    margin-top: 5vw;
+}
+.img{
+    width: 100%;
+}
+.nav-links a{
+    color: #fff !important;
+}
+
+.nav > .nav-links > a::after {
+    background-color: #fff !important; /* Line color */
+  }
+  
+
+  #header-1{
+    display: none !important;
+  }
+  
+  
+  header{
+    min-height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 10vw; */
+    background-color: transparent;
+    padding: 0 3.5vw;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    margin-top: 1vw;
+    /* border: 1px solid red; */
+    
+}
+
+.header-left-container{
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+/* Logo */
+.header-left-container img{
+    width: 15vw;
+    opacity: 0; /* Initially invisible */
+    animation: headerStarter 0.5s ease-in 0.5s forwards;
+    /* margin-top: -0.8vw; */
+}
+
+
+.header-right-container{
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* border: 1px solid yellow; */
+}
+
+
+
+
+/* Header Button */
+.button-17 {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.button-17:hover {
+    background: var(--Orange) !important;
+    color: #f3f3f3 !important;
+}
