@@ -122,19 +122,29 @@
         </div>
         <div class="s2-right">
             <form action="#">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name" required>
+                <div class="nameBox formBoxes">
+                    <input class="inputForm" type="text" id="name" name="name" required>
+                    <label for="name" class="labelForm">Your name</label>
+                </div>
 
-                <label for="company">Your company's name</label>
-                <input type="text" id="company" name="company" required>
+                <div class="companyBox formBoxes">    
+                    <input class="inputForm" type="text" id="company" name="company" required>
+                    <label for="company" class="labelForm">Your company's name</label>
+                </div>
 
-                <label for="email">Your e-mail address</label>
-                <input type="email" id="email" name="email" required>
+                <div class="emailBox formBoxes">    
+                    <input class="inputForm" type="email" id="email" name="email" required>
+                    <label for="email" class="labelForm">Your e-mail address</label>
+                </div>
 
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone" required>
-
-                <button type="submit">Submit</button>
+                <div class="phoneBox formBoxes">
+                    <input class="inputForm" type="tel" id="phone" name="phone" required>
+                    <label for="phone" class="labelForm">Phone number</label>
+                </div>
+                
+                <div class="submitBox">
+                    <button type="submit" class="submitBtn">Submit</button>
+                </div>
             </form>
         </div>
      </section>
