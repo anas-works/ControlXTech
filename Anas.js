@@ -232,6 +232,11 @@ const darkModeToggle = document.getElementById("dark-mode-toggle");
  const Tiktok_Icon_Footer = document.getElementById("TIKTOK-icon");
      //  ------------------------------Footer ICONS
 
+    // --------------------------------arrow dark
+ const arrow = document.getElementById("arrow_pic");
+    // --------------------------------arrow dark
+
+
 // Track the dark mode state
 let isDarkMode = false; // Global state to manage dark mode
 
@@ -251,6 +256,8 @@ const enableDarkMode = () => {
   INSTA_Icon_Footer.src = "anas-assets/instagram-white.svg";
   LinkedIN_Icon_Footer.src = "anas-assets/linkedin-white.svg";
   Tiktok_Icon_Footer.src = "anas-assets/tiktok-white.svg";
+  // arrow dark
+  arrow.src = "/anas-assets/right-arrow-dark.png";
 };
 
 // Function to disable dark mode
@@ -269,6 +276,8 @@ const disableDarkMode = () => {
   INSTA_Icon_Footer.src = "anas-assets/instagram.svg";
   LinkedIN_Icon_Footer.src = "anas-assets/linkedin.svg";
   Tiktok_Icon_Footer.src = "anas-assets/tiktok.svg";
+    // arrow light
+    arrow.src = "/anas-assets/right-arrow.png";
 };
 
 // Toggle dark mode on button click
