@@ -197,7 +197,7 @@ body {
 /* SECTION 2 */
 .section-2{
     width: 100vw;
-    height: 90vh;
+    height: 45vw;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -211,15 +211,15 @@ body {
     gap: 5%;
 }
 .s2-left h1{
-    font-size: 2.5vw;
-    font-weight: 800;
+    font-size: 3vw;
+    font-weight: 900;
     font-family: var(--primaryFont);
     line-height: 3.2vw;
-    width: 70%;
+    width: 90%;
 }
 .s2-left p{
-    width: 70%;
-    font-size: 1.2vw;
+    width: 80%;
+    font-size: 1.3vw;
     font-family: var(--secondaryFont);
 }
 
@@ -245,6 +245,7 @@ body {
     align-items: start;
     flex-direction: column;
     padding: 1% 3% 1% 3%;
+    position: relative;
 }
 .inputForm{
     width: 100%;
@@ -266,16 +267,16 @@ body {
     position: absolute;
     cursor: none;
     transition: all 0.3s linear;
+    top: 30%;
 }
-.inputForm:focus + .labelForm,
-.inputForm:not(:placeholder-shown) + .labelForm {
-    transform: translateY(-2.4vw);
+
+
+.inputForm:focus + .labelForm {
+    top: 17%;
     font-size: 1vw;
     color: #9EFCF1; /* Change label color when focused */
 }
-
 .inputForm:placeholder-shown + .labelForm {
-    transform: translateY(-1vw);
     font-size: 1.6vw;
     color: #48798C; /* Reset label color */
 }
