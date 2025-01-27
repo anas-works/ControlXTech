@@ -39,10 +39,6 @@ html{
     display: none;
 }
 
-
-
-
-
 /* default body */
 body {
   cursor: none;
@@ -56,7 +52,6 @@ body {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
-
 
 
 .parallax-image {
@@ -1641,7 +1636,7 @@ body.dark .box-title, body.dark .box-para{
 
 .logoInner{
     width: 95%;
-    height: 20vw;
+    height: 25vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1652,16 +1647,17 @@ body.dark .box-title, body.dark .box-para{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .logoBoxes{
-    width: 14%;
+    width: 15%;
     height: 7vw;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
 }
 /* When in view, apply this class */
 .logoBoxes.animate {
@@ -1677,14 +1673,27 @@ body.dark .box-title, body.dark .box-para{
     rotate: 25deg;
 }
 .innerLogoBox{
-    width: 30vw;
+    width: 28vw;
     height: auto;
     mix-blend-mode: multiply;
     filter: contrast(1);
 }
 
 @media (max-width: 500px) {
-  }
+    .logoInner{
+        height: 60vw;
+    }
+    .logoBoxes{
+        width: 30%;
+        height: 15vw;
+    }
+    .innerLogoBox{
+        width: 60vw;
+    }    
+    .sizeDiff{
+        width: 30vw;
+    }
+}
 
 
 
