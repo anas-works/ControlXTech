@@ -17,6 +17,12 @@ a, button, img{
     --Orange: #e3720f;
     --Main-Color: #EBECE7;
     --DarkBG: #06171D;
+      --hover-line-color: #000; /* Default black */
+      --cursor-border-color: #000; /* Default border color for light mode */
+      --Cursor-dot: #F5761D;
+
+
+
 }
 html{
     scroll-behavior: smooth;
@@ -69,11 +75,11 @@ body {
         left: 0;
         width: 4vw; /* Size of the outer circle */
         height: 4vw;
-        border: 1px solid #000; /* Border color and width */
+        border: 2px solid var(--cursor-border-color); /* Use the CSS variable */
         border-radius: 50%; /* Makes it a circle */
         background-color: transparent; /* Transparent center */
         pointer-events: none; /* Prevent blocking interactions */
-        z-index: 3000; /* Ensure it appears above all content */
+        z-index: 4000 !important; /* Ensure it appears above all content */
         transform: translate(-50%, -50%); /* Center the cursor around the pointer */
         transition: left 0.1s ease, top 0.1s ease; /* Smooth movement with delay */
       }
@@ -87,8 +93,8 @@ body {
         width: 10px; /* Size of the inner dot */
         height: 10px;
         border-radius: 50%; /* Make it circular */
-        background-color: #EB2426; /* Inner dot color */
-      }
+        background-color: var(--Cursor-dot); /* Inner dot color */
+    }
   
       /* Hover state for button and anchor */
       button:hover, a:hover {
@@ -303,7 +309,7 @@ h1 {
 @media (min-width:800px){
     .LowerText{
         min-width: 55vw !important;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     
 }
