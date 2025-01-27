@@ -39,10 +39,6 @@ html{
     display: none;
 }
 
-
-
-
-
 /* default body */
 body {
   cursor: none;
@@ -56,7 +52,6 @@ body {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
-
 
 
 .parallax-image {
@@ -1222,194 +1217,6 @@ body.dark .box-title, body.dark .box-para{
 
 
 
-/*  ABOUT PART 1 STARTS */
-body.dark .aboutText{
-    color: #fff;
-}
-
-.about-p1{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.h-about{
-    margin-top: 3vw;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: var(--secondaryFont);
-    font-size: 1.8vw;
-}
-.wos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 6vw;
-    font-family: var(--secondaryFont);
-    font-weight: 600;
-    letter-spacing: -3px;
-}
-.aboutText{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 35vw;
-    font-size: 1.1vw;
-    font-family: var(--secondaryFont);
-    margin-bottom: 3vw;
-}
-.ab-hr{
-    width: 90vw;
-}
-.shuffle-cards{
-    width: 90vw;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.shuffle{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.boxes{
-    width: 20vw;
-    height: 26vw;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.223) 0px 0px 20px 5px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10%;
-    margin-bottom: 3vw;
-    z-index: 1;
-    transition: all 0.2s linear;
-}
-.dot-p{
-    width: 80%;
-}
-.dots{
-    width: 1vw;
-    height: 1vw;
-    background-color: #121315;
-    border-radius: 50%;
-    transform: translate(-0.5vw,-2.2vw);
-}
-.titles{
-    font-size: 1.5vw;
-    color: black;
-    font-weight: 800;
-    font-family: var(--secondaryFont);
-    width: 80%;
-}
-.box-content{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.coma-start{
-    color: #000;
-    font-size: 3vw;
-    transform: translateY(-3vw);
-}
-.para-boxes{
-    font-size: 1vw;
-    text-indent: 2vw;
-    color: rgb(48, 48, 48);
-    text-transform: capitalize;
-    font-family: var(--secondaryFont);
-}
-.coma-end{
-    font-size: 3vw;
-    color: #000;
-    transform: translateY(3vw);
-}
-.names{
-    font-size: 2vw;
-    font-family: var(--secondaryFont);
-    font-weight: 600;
-    letter-spacing: -2px;
-    width: 80%;
-}
-
-.box1{
-    transform: translate(2vw, -2vw) rotate(8deg);
-}
-.box2{
-    transform: translate(0vw, 5vw) rotate(-8deg);
-}
-.box3{
-    transform: translate(-2vw, 2vw) rotate(10deg);
-}
-.box4{
-    transform: translate(-2vw, 0vw) rotate(-10deg);
-}
-.box5{
-    transform: translate(-2vw, 2vw) rotate(8deg);
-}
-.box6{
-    transform: translate(-3vw, -2vw) rotate(-10deg);
-}
-.box7{
-    transform: translate(5vw, -4vw) rotate(4deg);
-}
-.box8{
-    transform: translate(-2vw, 2vw) rotate(-10deg);
-}
-
-.box1:hover{
-    transform: translate(2vw, -2vw) rotate(0deg);
-}
-.box2:hover{
-    transform: translate(0vw, 5vw) rotate(0deg);
-}
-.box3:hover{
-    transform: translate(-2vw, 2vw) rotate(0deg);
-}
-.box4:hover{
-    transform: translate(-2vw, 0vw) rotate(0deg);
-}
-.box5:hover{
-    transform: translate(-2vw, 2vw) rotate(0deg);
-}
-.box6:hover{
-    transform: translate(-3vw, -2vw) rotate(0deg);
-}
-.box7:hover{
-    transform: translate(5vw, -4vw) rotate(0deg);
-}
-.box8:hover{
-    transform: translate(-2vw, 2vw) rotate(0deg);
-}
-.boxes:hover{
-    box-shadow: rgba(0, 0, 0, 0.223) 0px 0px 30px 15px ;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* About Section */
@@ -1829,9 +1636,7 @@ body.dark .aboutText{
 
 .logoInner{
     width: 95%;
-    height: 20vw;
-}
-.logoDesktops{
+    height: 25vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1842,16 +1647,17 @@ body.dark .aboutText{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .logoBoxes{
-    width: 14%;
+    width: 15%;
     height: 7vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Fully transparent initially */
-  transform: translateY(50px); /* Move down by 50px initially */
-  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
 }
 /* When in view, apply this class */
 .logoBoxes.animate {
@@ -1867,56 +1673,25 @@ body.dark .aboutText{
     rotate: 25deg;
 }
 .innerLogoBox{
-    width: 30vw;
+    width: 28vw;
     height: auto;
     mix-blend-mode: multiply;
-    filter: contrast(1);}
-.logoMobile{
-    display: none;
+    filter: contrast(1);
 }
 
 @media (max-width: 500px) {
-    hr{
-        display: none;
-    }
-    .logoDesktops{
-        /* display: none; */
-        /* overflow-x: hidden; */
-        min-height: 100vh;
-        flex-direction: row;
-        width: 30vw;
-        
-    }
-    .logoMobile{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     .logoInner{
         height: 60vw;
     }
-    .logoHeading{
-        width: 85%;
-        height: 40vw;
-        font-size: 8.3vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 10.5vw;
-        text-align: left;
-        margin-top: -10vh !important;
-    }
-    .mb-mob{
-        margin-bottom: 10vw;
-        width: 80vw;
-    }
     .logoBoxes{
-        width: 40%;
-        height: 12vw;
+        width: 30%;
+        height: 15vw;
     }
-    .logosHr{
-        /* background-color: rgba(74, 74, 74, 0); */
-        height: 7vw;
+    .innerLogoBox{
+        width: 60vw;
+    }    
+    .sizeDiff{
+        width: 30vw;
     }
 }
 
