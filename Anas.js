@@ -174,7 +174,7 @@ modeToggleButton.addEventListener("click", toggleMode);
 ScrollTrigger.create({
   trigger: "footer",
   start: "45% center",
-  markers: true,
+  // markers: true,
 
   onEnter: () => {
     // Toggle the mode when footer is reached
@@ -237,6 +237,22 @@ const darkModeToggle = document.getElementById("dark-mode-toggle");
     // --------------------------------arrow dark
 
 
+    // --------------------------------clients dark
+ const client_0 = document.getElementById("client-0");
+ const client_1 = document.getElementById("client-1");
+ const client_2 = document.getElementById("client-2");
+ const client_3 = document.getElementById("client-3");
+ const client_4 = document.getElementById("client-4");
+ const client_5 = document.getElementById("client-5");
+ const client_6 = document.getElementById("client-6");
+ const client_7 = document.getElementById("client-7");
+ const client_8 = document.getElementById("client-8");
+ const client_9 = document.getElementById("client-9");
+ const client_10 = document.getElementById("client-10");
+ const client_11 = document.getElementById("client-11");
+    // --------------------------------clients dark
+
+
 // Track the dark mode state
 let isDarkMode = false; // Global state to manage dark mode
 
@@ -244,6 +260,16 @@ let isDarkMode = false; // Global state to manage dark mode
 const enableDarkMode = () => {
   isDarkMode = true; // Update state
   document.body.classList.add("dark-mode");
+
+
+  // Change nav hover line to white
+  document.documentElement.style.setProperty("--hover-line-color", "#fff");
+
+  // Change cursor border color to #EBECE7
+  document.documentElement.style.setProperty("--cursor-border-color", "#EBECE7");
+
+  // Change cursor dot to #F5761D
+  document.documentElement.style.setProperty("--Cursor-dot", "#F5761D");
 
   // Update images to dark mode
   logoHeader_1.src = "anas-assets/Logo-cxt.webp";
@@ -258,12 +284,40 @@ const enableDarkMode = () => {
   Tiktok_Icon_Footer.src = "anas-assets/tiktok-white.svg";
   // arrow dark
   arrow.src = "/anas-assets/right-arrow-dark.png";
+
+  // Clients
+  client_0.src = "anas-assets/White-Logos-Client/6.png";
+  client_1.src = "anas-assets/White-Logos-Client/Brand Out White Logo.png";
+  client_2.src = "anas-assets/White-Logos-Client/getset travel white logo.png";
+  client_3.src = "anas-assets/White-Logos-Client/holidayventure White Logo.png";
+  client_4.src = "anas-assets/White-Logos-Client/Journela White Logo.png";
+  client_5.src = "anas-assets/White-Logos-Client/rochaksafar White Logo.png";
+  client_6.src = "anas-assets/White-Logos-Client/sennic White Logo.png";
+  client_7.src = "anas-assets/White-Logos-Client/starla White Logo.png";
+  client_8.src = "anas-assets/White-Logos-Client/tadlafil super White Logo.png";
+  client_9.src = "anas-assets/White-Logos-Client/Web-New21-white.png";
+  client_10.src = "anas-assets/White-Logos-Client/3.png";
+  client_11.src = "anas-assets/White-Logos-Client/2.png";
+  // Clients
+
 };
 
 // Function to disable dark mode
 const disableDarkMode = () => {
   isDarkMode = false; // Update state
   document.body.classList.remove("dark-mode");
+
+
+  // Change hover line to black
+  document.documentElement.style.setProperty("--hover-line-color", "#000");
+
+  // Change cursor border color to black
+  document.documentElement.style.setProperty("--cursor-border-color", "#000");
+
+  // Change cursor dot color to #EB2426
+  document.documentElement.style.setProperty("--Cursor-dot", "#EB2426");
+
+
 
   // Update images to light mode
   logoHeader_1.src = "anas-assets/CXT-Logo-Light.png";
@@ -278,6 +332,22 @@ const disableDarkMode = () => {
   Tiktok_Icon_Footer.src = "anas-assets/tiktok.svg";
     // arrow light
     arrow.src = "/anas-assets/right-arrow.png";
+
+    // Clients
+  client_0.src = "anas-assets/Black-Logos-Client/1.png";
+  client_1.src = "anas-assets/Black-Logos-Client/Brand Out Black Logo.png";
+  client_2.src = "anas-assets/Black-Logos-Client/getset travel Black Logo.png";
+  client_3.src = "anas-assets/Black-Logos-Client/holidayventure Black Logo.png";
+  client_4.src = "anas-assets/Black-Logos-Client/Journela Black Logo.png";
+  client_5.src = "anas-assets/Black-Logos-Client/rochaksafar Black Logo.png";
+  client_6.src = "anas-assets/Black-Logos-Client/sennic Black Logo.png";
+  client_7.src = "anas-assets/Black-Logos-Client/starla Black Logo.png";
+  client_8.src = "anas-assets/Black-Logos-Client/tadlafil super Black Logo.png";
+  client_9.src = "anas-assets/Black-Logos-Client/Web-New21.png";
+  client_10.src = "anas-assets/Black-Logos-Client/3.png";
+  client_11.src = "anas-assets/Black-Logos-Client/Untitled-1 (1).png";
+
+  // Clients
 };
 
 // Toggle dark mode on button click
@@ -293,7 +363,7 @@ darkModeToggle.addEventListener("click", () => {
 ScrollTrigger.create({
   trigger: "footer", // Target the footer
   start: "45% center", // Trigger when the top of the footer reaches the center of the viewport
-  markers: true,
+  // markers: true,
 
   onEnter: () => {
     // Toggle the mode when footer is reached
@@ -313,6 +383,10 @@ ScrollTrigger.create({
     }
   },
 });
+
+
+
+
 
 
 // Toggle JS
