@@ -1062,3 +1062,17 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
+
+
+
+
+
+
+// Prevent default action for links with href="#"
+document.querySelectorAll('a[href="#"]').forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault(); // Stops the default action
+    history.replaceState(null, '', location.pathname); // Clears the # from the URL
+  });
+});
+
