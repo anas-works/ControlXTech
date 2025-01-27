@@ -187,27 +187,23 @@
 
 
     /* ------------------- portfolio */
-
-    .logosSection, .innerFooter{
-display: none !important;   
- }
-    .logoBoxes{
+    /* .logoBoxes{
         width: 0vw !important;
-        /* margin: 0 90vw; */
+        margin: 0 90vw;
     }
     .portfolio-text-mob, .portfolio-text-mob h1{
         margin: 5vh 0 !important;
         padding: 0 4vw 0 2.5vw;
-    }
-    .rowLogo{
+    } */
+    /* .rowLogo{
         flex-direction: column;
-        /* gap: 20vw; */
+        gap: 20vw;
         height: 100vh !important;
         border: 1px solid red;
     }
     .rowLogo img{
         width: 100vw;
-    }
+    } */
 
 
 
