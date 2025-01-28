@@ -1082,3 +1082,20 @@ window.addEventListener('load', () => {
   }
 });
 
+
+
+
+
+
+// // mobile header hamburger 
+// document.querySelector('.nav-btn-mob').addEventListener('click', function() {
+//   // Change logo image to white.png
+//   const body = document.getElementsByTagName('body');
+//   // logo.src = 'anas-assets/Logo-cxt.webp';  // Update the logo source
+//   body.style.overflow = "hidden";  // Update the logo source
+  
+//   // // Change the color of the span to black
+//   // const span = this.querySelector('span');
+//   // span.style.color = '#000';  // Change span color to black
+// });
+
