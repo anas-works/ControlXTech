@@ -1070,9 +1070,15 @@ updateTime();
 
 // Prevent default action for links with href="#"
 document.querySelectorAll('a[href="#"]').forEach(link => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault(); // Stops the default action
-    history.replaceState(null, '', location.pathname); // Clears the # from the URL
+  link.addEventListener('click', event => {
+    event.preventDefault(); // Prevent default browser action
   });
+});
+
+// Optional: Remove any existing # from the URL on page load
+window.addEventListener('load', () => {
+  if (window.location.hash) {
+    history.replaceState(null, null, ' '); // Removes the hash
+  }
 });
 
