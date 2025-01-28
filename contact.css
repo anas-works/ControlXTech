@@ -130,7 +130,26 @@ body {
 }
 .s1-card1{
     background-color: #FFFA78;
+    animation: cardsAnimations 0.7s linear;
 }
+.s1-card2{
+    animation: cardsAnimations 0.85s linear;
+}
+.s1-card3{
+    animation: cardsAnimations 1s linear;
+}
+
+@keyframes cardsAnimations {
+    0%{
+        opacity: 0;
+        transform: translateY(3vw);   
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0vw);
+    }
+}
+
 .s1-card1 .card1Title .dark1title{
     color: #000;
 }
@@ -197,14 +216,21 @@ body {
 /* SECTION 2 */
 .section-2{
     width: 100vw;
-    height: 45vw;
+    height: 37vw;
     display: flex;
     justify-content: center;
     align-items: start;
     padding: 5vw 0 0 0;
 }
+.section2Inner{
+    width: 84%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
 .s2-left{
-    width: 28.5%;
+    width: 35%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -225,7 +251,7 @@ body {
 
 
 .s2-right{
-    width: 55.5%;
+    width: 65%;
     height: 100%;
 }
 
@@ -238,7 +264,7 @@ body {
 }
 .formBoxes{
     width: 100%;
-    height: 13%;
+    height: 16%;
     background-color: #00364B;
     display: flex;
     justify-content: end;
@@ -250,7 +276,7 @@ body {
 .inputForm{
     width: 100%;
     height: 60%;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-weight: 900;
     font-family: var(--secondaryFont);
     background-color: #00364B;
@@ -262,12 +288,12 @@ body {
 .labelForm{
     color: #48798C;
     font-family: var(--secondaryFont);
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     font-weight: 900;
     position: absolute;
     cursor: none;
     transition: all 0.3s linear;
-    top: 30%;
+    top: 33%;
 }
 
 
@@ -277,7 +303,7 @@ body {
     color: #9EFCF1; /* Change label color when focused */
 }
 .inputForm:placeholder-shown + .labelForm {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     color: #48798C; /* Reset label color */
 }
 
@@ -355,4 +381,45 @@ body {
   
   .submitBtn:disabled {
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+
+  @media (max-width: 500px) {
+    .section2Inner{
+        width: 84%;
+        flex-direction: column;
+    }
+    .section-2{
+        height: 130vw;
+    }
+    .s2-right{
+        width: 100%;
+        height: 100%;
+    }
+    .s2-left{
+        width: 100%;
+        height: 60%;
+        gap: 10%;
+    }
+    .s2-left h1{
+        font-size: 9vw;
+        line-height: 7.5vw;
+        width: 100%;
+    }
+    .s2-left p{
+        width: 100%;
+        font-size: 4vw;
+    }    
+    .formBoxes{
+        height: 35%;
+    }
+    .inputForm{
+        font-size: 4vw;
+    }
+    
+.submitBtn {
+    font-size: 4vw;
+    height: 10vw;
+    width: 30vw;
+  }
   }

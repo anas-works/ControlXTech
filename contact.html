@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control X Tech</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="icon" href="anas-assets/x tech.png">
     <link rel="stylesheet" href="Mobile-Header.css">
 </head>
@@ -99,7 +99,7 @@
                     <div class="cont1"><p>I have a project in my mind.</p></div>
                 </div>
             </div>
-            <div class="s1-cards">
+            <div class="s1-cards s1-card2">
                 <div class="card1Title">
                     <div class="dark1title"><p>02 /</p></div>
                     <div class="light1title"><p>03</p></div>
@@ -108,7 +108,7 @@
                     <div class="cont1"><p>I have something to tell you.</p></div>
                 </div>
             </div>
-            <div class="s1-cards">
+            <div class="s1-cards s1-card3">
                 <div class="card1Title">
                     <div class="dark1title"><p>03 /</p></div>
                     <div class="light1title"><p>03</p></div>
@@ -124,39 +124,105 @@
 
 
     <!-- SECTION 2 -->
-     <section class="section-2">
-        <div class="s2-left">
-            <h1>Start with some basic info.</h1>
-            <p>The name and e-mail address are mandatory, the rest would be nice but we can live without it.</p>
+    <section class="section-2">
+        <div class="section2Inner">
+            <div class="s2-left">
+                <h1>Start with some basic info.</h1>
+                <p>The name and e-mail address are mandatory, the rest would be nice but we can live without it.</p>
+            </div>
+            <div class="s2-right">
+                <form action="#">
+                    <div class="nameBox formBoxes">
+                        <input class="inputForm" type="text" id="name" name="name" required>
+                        <label for="name" class="labelForm">Your name</label>
+                    </div>
+
+                    <div class="companyBox formBoxes">    
+                        <input class="inputForm" type="text" id="company" name="company" required>
+                        <label for="company" class="labelForm">Your company's name</label>
+                    </div>
+
+                    <div class="emailBox formBoxes">    
+                        <input class="inputForm" type="email" id="email" name="email" required>
+                        <label for="email" class="labelForm">Your e-mail address</label>
+                    </div>
+
+                    <div class="phoneBox formBoxes">
+                        <input class="inputForm" type="tel" id="phone" name="phone" required>
+                        <label for="phone" class="labelForm">Phone number</label>
+                    </div>
+                    
+                    <div class="submitBox">
+                        <button type="submit" class="submitBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="s2-right">
-            <form action="#">
-                <div class="nameBox formBoxes">
-                    <input class="inputForm" type="text" id="name" name="name" required>
-                    <label for="name" class="labelForm">Your name</label>
-                </div>
+    </section>
 
-                <div class="companyBox formBoxes">    
-                    <input class="inputForm" type="text" id="company" name="company" required>
-                    <label for="company" class="labelForm">Your company's name</label>
-                </div>
 
-                <div class="emailBox formBoxes">    
-                    <input class="inputForm" type="email" id="email" name="email" required>
-                    <label for="email" class="labelForm">Your e-mail address</label>
-                </div>
 
-                <div class="phoneBox formBoxes">
-                    <input class="inputForm" type="tel" id="phone" name="phone" required>
-                    <label for="phone" class="labelForm">Phone number</label>
+
+     
+    <!-- Foooter -->
+   
+    <footer class="footer">
+        <div class="preFooter">
+            <div class=" logoHeading text-center mb-mob"><h1>Feel free to reach out, let’s ignite your next big idea!</h1> </div>
+            <a href="" class="footerBtn">Let's talk</a>
+        </div>
+        <div class="Actual-Footer">
+            <div class=" footer-container footer-container-1">
+                <img id="Logo-Footer-3" src="anas-assets/CXT-Logo-Light.png" alt="" class="Logo-Footer">
+            </div>
+            <div class=" footer-container footer-container-2">
+                <div class="s2Heading" style="margin: 2.1vw; "><p>FOLLOW CONTROL X TECH</p></div>
+                    <div class="footerSocial" style="margin: -1vw 2.1vw;" >
+                        <a href="https://www.youtube.com/@ControlXTech75" target="_blank" class="iconsFooter"><img
+                                src="anas-assets/youtube.svg" alt="marker--v1" id="YT-icon" class="icns" /></a>
+
+                        <a href="https://m.facebook.com/61558648230847/" target="_blank" class="iconsFooter"><img
+                                src="anas-assets/facebook-tag.svg" alt="marker--v1" id="FB-icon" class="icns" /></a>
+
+                        <a href="https://www.instagram.com/control.x.tech?igsh=Z2J0dzl1aWRsNHRh" target="_blank"
+                            class="iconsFooter"><img src="anas-assets/instagram.svg" alt="marker--v1"
+                            id="INSTA-icon" class="icns" /></a>
+
+                        <a href="https://www.linkedin.com/company/control-x-tech/" target="_blank"
+                            class="iconsFooter"><img src="anas-assets/linkedin.svg" alt="marker--v1"  id="LinkedIn-icon" class="icns" /></a>
+                            
+                        <a href="tiktok.com/@controlxtech" target="_blank" class="iconsFooter"><img
+                                src="anas-assets/tiktok.svg" alt="marker--v1" id="TIKTOK-icon" class="icns" /></a>
+
+                    </div>
+            </div>
+            <div class=" footer-container footer-container-3">
+                <div class="S2Right S2Right-footer" style="margin: 1.4vw; ">
+                    <a href="" class="S2-a">Work</a>
+                    <a href="" class="S2-a">About</a>
+                    <a href="" class="S2-a">Services</a>
+                    <a href="contact.html" class="S2-a">Let's Talk</a>
+                </div>
+            </div>
+            <div class=" footer-container footer-container-4">
+                <div class="upperS3" style="margin: 2.1vw 1vw; ">
+                    <a href="mailto:info@controlxtech.com" class="mail">info@controlxtech.com</a>
+                    <a  href="https://www.google.com/maps?q=31.44538,74.26770" target="_blank" class="iconsFooter locationIcon"><img
+                            src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1" id="location-icon" class="icns" /></a>
                 </div>
                 
-                <div class="submitBox">
-                    <button type="submit" class="submitBtn">Submit</button>
-                </div>
-            </form>
+                    <a class="lowerS3 "style="margin: 0 1vw; text-decoration: none;"
+                        href="https://wa.me/923390069434?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                        target="_blank"> +92 339 0069434 </a>
+                    <div class="lower" style="margin: 0 1vw !important;"><p>Airlines Society, Lahore, Pakistan</p></div>
+                
+            </div>
         </div>
-     </section>
+        <div class="hrDiv">
+            <hr>
+            <p>all rights reserved</p>
+        </div>
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
@@ -164,5 +230,6 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="header.js"></script>
     <script src="Mobile-Header.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
