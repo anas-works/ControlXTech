@@ -405,6 +405,23 @@
   .S2Right > a:hover::after {
     width: 100%; /* Expand the line */
   }
+  .hrDiv{
+    height: 6vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hrDiv hr{
+    width: 94%;
+    margin-bottom: 0.5vw;
+  }
+  .hrDiv p{
+    color: #636363;
+    font-size: 0.85vw;
+    font-family: var(--secondaryFont);
+  }
 
 
   @media (max-width:500px) {
@@ -455,6 +472,16 @@
     }
     .lower p{
         font-size: 4vw;
+    }
+    .hrDiv p{
+        font-size: 2vw;
+    }    
+    .hrDiv hr{
+        width: 85%;
+        margin-bottom: 0.5vw;
+    }
+    .locationIcon{
+        transform: translateY(3vw);
     }
   }
 

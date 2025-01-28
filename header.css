@@ -9,10 +9,17 @@
     font-family: "Inter", serif;
 }
 :root{
-    --secondaryFont: "Montserrat", sans-serif, serif;
-    --Orange: #e3720f;
-    --Main-Color: #EBECE7;
+  --primaryFont: "Inter", serif;
+  --secondaryFont: "Montserrat", sans-serif, serif;
+  --Orange: #e3720f;
+  --Main-Color: #EBECE7;
+  --DarkBG: #06171D;
+    --hover-line-color: #000; /* Default black */
+    --cursor-border-color: #000; /* Default border color for light mode */
     --Cursor-dot: #F5761D;
+
+
+
 }
 html{
     scroll-behavior: smooth;
@@ -388,3 +395,5 @@ html{
       border-color: yellow; /* Change border color to yellow */
       transform: scale(1.05); /* Scale up the cursor */
     }
+
+
