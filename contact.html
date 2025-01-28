@@ -90,7 +90,7 @@
                     <div class="cont1"><p>I have a project in my mind.</p></div>
                 </div>
             </div>
-            <div class="s1-cards">
+            <div class="s1-cards s1-card2">
                 <div class="card1Title">
                     <div class="dark1title"><p>02 /</p></div>
                     <div class="light1title"><p>03</p></div>
@@ -99,7 +99,7 @@
                     <div class="cont1"><p>I have something to tell you.</p></div>
                 </div>
             </div>
-            <div class="s1-cards">
+            <div class="s1-cards s1-card3">
                 <div class="card1Title">
                     <div class="dark1title"><p>03 /</p></div>
                     <div class="light1title"><p>03</p></div>
@@ -115,39 +115,41 @@
 
 
     <!-- SECTION 2 -->
-     <section class="section-2">
-        <div class="s2-left">
-            <h1>Start with some basic info.</h1>
-            <p>The name and e-mail address are mandatory, the rest would be nice but we can live without it.</p>
+    <section class="section-2">
+        <div class="section2Inner">
+            <div class="s2-left">
+                <h1>Start with some basic info.</h1>
+                <p>The name and e-mail address are mandatory, the rest would be nice but we can live without it.</p>
+            </div>
+            <div class="s2-right">
+                <form action="#">
+                    <div class="nameBox formBoxes">
+                        <input class="inputForm" type="text" id="name" name="name" required>
+                        <label for="name" class="labelForm">Your name</label>
+                    </div>
+
+                    <div class="companyBox formBoxes">    
+                        <input class="inputForm" type="text" id="company" name="company" required>
+                        <label for="company" class="labelForm">Your company's name</label>
+                    </div>
+
+                    <div class="emailBox formBoxes">    
+                        <input class="inputForm" type="email" id="email" name="email" required>
+                        <label for="email" class="labelForm">Your e-mail address</label>
+                    </div>
+
+                    <div class="phoneBox formBoxes">
+                        <input class="inputForm" type="tel" id="phone" name="phone" required>
+                        <label for="phone" class="labelForm">Phone number</label>
+                    </div>
+                    
+                    <div class="submitBox">
+                        <button type="submit" class="submitBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="s2-right">
-            <form action="#">
-                <div class="nameBox formBoxes">
-                    <input class="inputForm" type="text" id="name" name="name" required>
-                    <label for="name" class="labelForm">Your name</label>
-                </div>
-
-                <div class="companyBox formBoxes">    
-                    <input class="inputForm" type="text" id="company" name="company" required>
-                    <label for="company" class="labelForm">Your company's name</label>
-                </div>
-
-                <div class="emailBox formBoxes">    
-                    <input class="inputForm" type="email" id="email" name="email" required>
-                    <label for="email" class="labelForm">Your e-mail address</label>
-                </div>
-
-                <div class="phoneBox formBoxes">
-                    <input class="inputForm" type="tel" id="phone" name="phone" required>
-                    <label for="phone" class="labelForm">Phone number</label>
-                </div>
-                
-                <div class="submitBox">
-                    <button type="submit" class="submitBtn">Submit</button>
-                </div>
-            </form>
-        </div>
-     </section>
+    </section>
 
 
 
@@ -219,5 +221,6 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="header.js"></script>
     <script src="Mobile-Header.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
