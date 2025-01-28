@@ -1,9 +1,14 @@
 # Enable URL rewriting
 RewriteEngine On
 
-# Remove .html extension
+# Remove .html extension for all files
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Redirect .html links to clean URLs
+RewriteCond %{THE_REQUEST} \s([^\s]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
 
 # Redirect index.html to root
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/.*index\.html\sHTTP/
