@@ -1047,6 +1047,9 @@ body.dark .box-title, body.dark .box-para{
     .img-serv{
         width: 100%;
     }
+    .box-right-inverted,.box-right,.box-left-inverted,.box-left{
+        opacity: 1;
+    }
 
 }
 

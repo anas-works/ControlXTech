@@ -342,7 +342,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 3vw;
-    overflow-x: hidden !important;
+    margin-bottom: 3vw;
 }
 .footer-container{
     height: 100%;

@@ -1037,6 +1037,204 @@ if (window.innerWidth > 500) {
         rotate: 0,
         opacity: 1,
       });
+
+
+
+      gsap.from("#br1", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "0% 90%",
+          end: "8% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl1", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "0% 90%",
+          end: "8% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+
+    
+    gsap.from("#br2", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "9% 90%",
+          end: "20% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl2", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "9% 90%",
+          end: "20% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+
+    
+    gsap.from("#br3", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "25% 90%",
+          end: "30% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl3", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "25% 90%",
+          end: "30% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+    
+    gsap.from("#br4", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "38% 90%",
+          end: "42% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl4", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "38% 90%",
+          end: "42% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+    
+    gsap.from("#br5", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "50% 90%",
+          end: "55% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl5", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "50% 90%",
+          end: "55% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+
+    
+    gsap.from("#br6", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "63% 90%",
+          end: "68% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl6", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "63% 90%",
+          end: "68% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+
+    
+    gsap.from("#br7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "73% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "73% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+
+    
+    gsap.from("#br8", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "90% 90%",
+          end: "95% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl8", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "90% 90%",
+          end: "95% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+
+    
+    gsap.from("#br7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "75% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+      gsap.from("#bl7", {
+        scrollTrigger: {
+          trigger: ".serv-p2",
+          start: "75% 90%",
+          end: "80% 60%",
+          scrub: true,
+        },
+        y: "10vh" ,
+        opacity: 0,
+      });
+
 }
 
 
