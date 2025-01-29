@@ -17,7 +17,7 @@
 
 /* Light Mode (default) */
 /* default body */
-body {
+/* body {
     cursor: none;
     background: var(--Main-Color);
     transition: background-color 0.1s, color 0.1s;
@@ -29,7 +29,7 @@ body {
     overflow-x: hidden !important;
     scroll-behavior: smooth;
   }
-  
+   */
 
 
 
@@ -37,61 +37,78 @@ body {
 /* ---------------------DARK Mode */
 
 
-  /* -----------------------------Toggle Button Styling */
-  .toggle-container{
-    height: fit-content;
-    width: 120px;
-    background-color: var(--DarkBG);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    position: fixed;
-    bottom: 5%;
-    right: -2.4%;
-    z-index: 2000;
-    padding: 10px;
-    border-radius: 50px;
-    opacity: 0;  /* Initially invisible */
-    transform: translateX(200px);  /* Positioned 200px to the right */
-    transition: opacity 1s ease, transform 1s ease;  /* Smooth transition */    
+/* -----------------------------Toggle Button Styling */
+.toggle-container {
+  height: fit-content;
+  width: 120px;
+  background-color: var(--DarkBG);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  bottom: 5%;
+  right: -2.4%; /* Initially positioned outside */
+  z-index: 2000;
+  padding: 10px;
+  border-radius: 50px;
+  opacity: 0;  /* Initially invisible */
+  transform: translateX(200px);  /* Positioned 200px to the right */
+  transition: opacity 1s ease, transform 1s ease;  /* Smooth transition */
+}
+
+/* Toggle Button Styling */
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f1c40f; /* Default light mode color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-button:hover {
+  transform: scale(1.1);
+}
+
+.toggle-button:active {
+  transform: scale(0.95);
+}
+
+/* Icon Styling */
+#toggle-icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Dark Mode Styling */
+.dark-mode .toggle-button {
+  background-color: #34495e; /* Dark mode color */
+}
+
+.dark-mode #toggle-icon {
+  transform: rotate(360deg);
+}
+
+/* -----------------------------Fix for Mobile Overflow */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important; /* Prevent horizontal scrolling */
   }
-  .toggle-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    background-color: #f1c40f; /* Default light mode color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    
+  .toggle-container {
+    right: -12%; /* Adjust to keep it within the viewport on mobile */
+    transform: translateX(0); /* Keep it fully visible */
   }
-  .toggle-button:hover{
-    transform: scale(1.1);
-  }
+}
+/* -----------------------------Fix for Horizontal Overflow */
+
+
   
-  .toggle-button:active {
-    transform: scale(0.95);
-  }
-  
-  /* Icon Styling */
-  #toggle-icon {
-    font-size: 1.5rem;
-    color: white;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Dark Mode Styling */
-  .dark-mode .toggle-button {
-    background-color: #34495e; /* Dark mode color */
-  }
-  
-  .dark-mode #toggle-icon {
-    transform: rotate(360deg);
-  }
   /* -----------------------------Toggle Button Styling */
 
 
@@ -109,7 +126,7 @@ body.dark-mode {
     border-width: 1px;
   }
   
-  body.dark-mode button,   body.dark-mode .arrow-circle {
+  body.dark-mode button,   body.dark-mode .arrow-circle ,body.dark-mode .nav-mob > .nav-btn-mob > label > span{
     border-color: var(--Main-Color);
   }
 /* card1 */

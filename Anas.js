@@ -1070,9 +1070,32 @@ updateTime();
 
 // Prevent default action for links with href="#"
 document.querySelectorAll('a[href="#"]').forEach(link => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault(); // Stops the default action
-    history.replaceState(null, '', location.pathname); // Clears the # from the URL
+  link.addEventListener('click', event => {
+    event.preventDefault(); // Prevent default browser action
   });
 });
+
+// Optional: Remove any existing # from the URL on page load
+window.addEventListener('load', () => {
+  if (window.location.hash) {
+    history.replaceState(null, null, ' '); // Removes the hash
+  }
+});
+
+
+
+
+
+
+// // mobile header hamburger 
+// document.querySelector('.nav-btn-mob').addEventListener('click', function() {
+//   // Change logo image to white.png
+//   const body = document.getElementsByTagName('body');
+//   // logo.src = 'anas-assets/Logo-cxt.webp';  // Update the logo source
+//   body.style.overflow = "hidden";  // Update the logo source
+  
+//   // // Change the color of the span to black
+//   // const span = this.querySelector('span');
+//   // span.style.color = '#000';  // Change span color to black
+// });
 

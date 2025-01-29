@@ -1,0 +1,128 @@
+/* Wrapper for the entire content */
+#preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Preloader Container */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Semi-transparent background */
+    z-index: 9999; /* Stay on top of everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Loader Circle */
+#loader {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f68434;
+    animation: spin 2s linear infinite;
+}
+
+/* Inner Circle (Second Animation) */
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9ad77;
+    animation: spin 3s linear infinite;
+}
+
+/* Innermost Circle (Third Animation) */
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fabb8e;
+    animation: spin 1.5s linear infinite;
+}
+
+/* Spin Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #loader {
+        width: 120px;
+        height: 120px;
+    }
+
+    #loader:before {
+        width: 110px;
+        height: 110px;
+    }
+
+    #loader:after {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    #loader {
+        width: 100px;
+        height: 100px;
+    }
+
+    #loader:before {
+        width: 90px;
+        height: 90px;
+    }
+
+    #loader:after {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    #loader {
+        width: 80px;
+        height: 80px;
+    }
+
+    #loader:before {
+        width: 70px;
+        height: 70px;
+    }
+
+    #loader:after {
+        width: 50px;
+        height: 50px;
+    }
+}
