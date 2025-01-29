@@ -1306,7 +1306,7 @@ body.dark .box-title, body.dark .box-para{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    overflow: hidden !important;
+    
 }
 .vsections{
     width: 39.3%;
