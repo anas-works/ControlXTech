@@ -413,7 +413,6 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 4vw 0 5vw 0;
-    overflow-x: hidden !important;
 }
 .aboutInner{
     width: 80%;
@@ -549,8 +548,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15vw;
-    overflow-x: hidden !important;
+    margin-bottom: 15vw;    
 
 }
 .videoInner{
@@ -779,8 +777,6 @@ h1 {
     align-items: center;
     margin-bottom: 7vw;
     padding: 0 9vw;
-    overflow-x: hidden !important;
-
 }
 .innerServ{
     width: 100vw;
@@ -1066,8 +1062,6 @@ body.dark .box-title, body.dark .box-para{
     justify-content: center;
     margin-top: 3vw;
     margin-bottom: 3vw;
-    overflow-x: hidden !important;
-
 }
 .port-left{
     width: 67.5%;
@@ -1199,8 +1193,6 @@ body.dark .box-title, body.dark .box-para{
     justify-content: center;
     align-items: center;
     margin-top: 5vw;
-    overflow-x: hidden !important;
-
 }
 .aboutInner{
     width: 80%;
@@ -1298,7 +1290,6 @@ body.dark .box-title, body.dark .box-para{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden !important;
 
 }
 .videoInner{
@@ -1588,8 +1579,6 @@ body.dark .box-title, body.dark .box-para{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden !important;
-
 }
 .logoHeading{
     font-size: 4vw;
@@ -1691,8 +1680,6 @@ body.dark .box-title, body.dark .box-para{
     margin-top: 10vh;
     margin-bottom: 5vh;
     height: fit-content;
-    overflow-x: hidden !important;
-
 }
 .acheive{
     width: 100vw;
@@ -1795,8 +1782,6 @@ body.dark .box-title, body.dark .box-para{
 }
 @media (max-width: 500px) {
     .section-7{
-        overflow-x: hidden;
-        overflow-y: hidden;
         height: 150vh;
     }
     .acheive{
