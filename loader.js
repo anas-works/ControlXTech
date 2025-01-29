@@ -39,7 +39,6 @@
 
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
     const pageWrapper = document.getElementById('preloader-wrapper');
@@ -57,8 +56,16 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href'); // Get the target URL
 
-            // Ignore links that scroll within the same page or are not navigation links
-            if (!href || href.startsWith('#') || href.startsWith('javascript:')) return;
+            // Ignore external links or links that scroll within the same page
+            if (
+                !href || 
+                href.startsWith('#') || 
+                href.startsWith('javascript:') || 
+                link.target === '_blank' || 
+                href.startsWith('http') // External links
+            ) {
+                return;
+            }
 
             // Prevent default behavior and show the loader
             e.preventDefault();
@@ -91,5 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
 
+    // Prevent loader for elements explicitly marked with a specific class
+    document.querySelectorAll('.no-loader').forEach(element => {
+        element.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent loader trigger
+        });
+    });
+});
