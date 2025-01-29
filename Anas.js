@@ -1057,7 +1057,8 @@ if (window.innerWidth > 500) {
           end: "8% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: -50,
+        rotate: -40,
         opacity: 0,
       });
 
@@ -1079,7 +1080,8 @@ if (window.innerWidth > 500) {
           end: "20% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: 50,
+        rotate: 40,
         opacity: 0,
       });
 
@@ -1101,7 +1103,8 @@ if (window.innerWidth > 500) {
           end: "30% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: -50,
+        rotate: -40,
         opacity: 0,
       });
     
@@ -1122,7 +1125,8 @@ if (window.innerWidth > 500) {
           end: "42% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: 50,
+        rotate: 40,
         opacity: 0,
       });
     
@@ -1143,7 +1147,8 @@ if (window.innerWidth > 500) {
           end: "55% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: -50,
+        rotate: -40,
         opacity: 0,
       });
 
@@ -1165,7 +1170,8 @@ if (window.innerWidth > 500) {
           end: "68% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: 50,
+        rotate: 40,
         opacity: 0,
       });
 
@@ -1187,7 +1193,8 @@ if (window.innerWidth > 500) {
           end: "80% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: -50,
+        rotate: -40,
         opacity: 0,
       });
 
@@ -1209,31 +1216,12 @@ if (window.innerWidth > 500) {
           end: "95% 60%",
           scrub: true,
         },
-        y: "10vh" ,
+        x: 50,
+        rotate: 40,
         opacity: 0,
       });
 
     
-    gsap.from("#br7", {
-        scrollTrigger: {
-          trigger: ".serv-p2",
-          start: "75% 90%",
-          end: "80% 60%",
-          scrub: true,
-        },
-        y: "10vh" ,
-        opacity: 0,
-      });
-      gsap.from("#bl7", {
-        scrollTrigger: {
-          trigger: ".serv-p2",
-          start: "75% 90%",
-          end: "80% 60%",
-          scrub: true,
-        },
-        y: "10vh" ,
-        opacity: 0,
-      });
 
 }
 
