@@ -140,7 +140,6 @@ body.dark .ball{
 .Hero-Section{
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden !important;
     /* background-color: ; */
     display: flex;
     flex-direction: column;
@@ -289,7 +288,6 @@ h1 {
     width: 21vw;
     height: 21vw;
     border-radius: 20px;
-    overflow: hidden;
     position: absolute;
     opacity: 0; /* Start hidden */
     transform: scale(2) translate(-5vw, -7vw); /* Initial state for animation */
@@ -438,7 +436,7 @@ h1 {
     will-change: opacity, transform; /* Optimize for performance */
 }
 
-.animate-on-scroll.in-view {
+.animate-on-scroll,.in-view {
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to its original position */
 }
@@ -543,7 +541,7 @@ h1 {
 
 
 /* VIDEO SECTION */
-.videoSection{
+/* .videoSection{
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -720,7 +718,7 @@ h1 {
 
 
 
-
+ */
 
 
 
@@ -1290,7 +1288,7 @@ body.dark .box-title, body.dark .box-para{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-bottom: 15vw;
 }
 .videoInner{
     width: 95%;
@@ -1556,7 +1554,7 @@ body.dark .box-title, body.dark .box-para{
         transform: translateY(0vw);
     }
     .vSec-p5{
-        transform: translateY(0vw);
+        transform: translateY(-4vw) !important;
     }
 
 
@@ -1660,7 +1658,7 @@ body.dark .box-title, body.dark .box-para{
         width: 60vw;
     }    
     .sizeDiff{
-        width: 30vw;
+        width: 30vw !important;
     }
 }
 
@@ -1784,6 +1782,11 @@ body.dark .box-title, body.dark .box-para{
     .section-7{
         height: 150vh;
     }
+    .Hero-Section,.section-7,.videoSection,.aboutSection,.serviceSection,.portfolioSection,.logosSection{
+        overflow-x: hidden !important;
+        overflow: hidden;
+
+    }
     .acheive{
         flex-direction: column;
         justify-content: center;
@@ -1841,12 +1844,12 @@ body.dark .box-title, body.dark .box-para{
         color: white;
     }
     .card-1,.card-2{
-        transform: translateX(-30vw) rotate(-45deg);
+        transform: translateX(-30vw) rotate(-30deg);
         opacity: 0;
         /* transform-origin: bottom left; */
     }
     .card-3, .card-4{
-        transform: translateX(30vw) rotate(45deg) ;
+        transform: translateX(30vw) rotate(30deg) ;
         opacity: 0;
     }
     .hrHidden{
