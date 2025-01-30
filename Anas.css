@@ -436,7 +436,7 @@ h1 {
     will-change: opacity, transform; /* Optimize for performance */
 }
 
-.animate-on-scroll,.in-view {
+.animate-on-scroll.in-view {
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to its original position */
 }
@@ -1554,7 +1554,7 @@ body.dark .box-title, body.dark .box-para{
         transform: translateY(0vw);
     }
     .vSec-p5{
-        transform: translateY(-4vw) !important;
+        transform: translateY(0vw);
     }
 
 
@@ -1844,12 +1844,12 @@ body.dark .box-title, body.dark .box-para{
         color: white;
     }
     .card-1,.card-2{
-        transform: translateX(-30vw) rotate(-30deg);
+        transform: translateX(-30vw) rotate(-45deg);
         opacity: 0;
         /* transform-origin: bottom left; */
     }
     .card-3, .card-4{
-        transform: translateX(30vw) rotate(30deg) ;
+        transform: translateX(30vw) rotate(45deg) ;
         opacity: 0;
     }
     .hrHidden{

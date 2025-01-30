@@ -341,7 +341,6 @@ function applyScrollAnimations() {
                 start: "0% 90%",
                 end: "8% 60%",
                 scrub: true,
-                markers:true,
             },
             y: "10vh" ,
             opacity: 0,
@@ -546,7 +545,6 @@ function applyScrollAnimations() {
                 start: "30% 90%",
                 end: "30% center",
                 scrub: true,
-                markers:true
             },
             x: 0 ,
             rotate: 0,
