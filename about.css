@@ -303,8 +303,8 @@ body {
     align-items: start;
 }
 .innerBL{
-    width: 63%;
-    margin-top: 5vw;
+    width: 65%;
+    transform: translateY(4vw);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -312,7 +312,7 @@ body {
 }
 .s3imgL{
     width: 100%;
-    height: 30vw;
+    height: 32vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,8 +326,8 @@ body {
 
 .s3videoL{
     margin-top: 3vw;
-    width: 47%;
-    height: 14vw;
+    width: 40%;
+    height: 12.5vw;
     align-self: flex-end;
     display: flex;
     justify-content: center;
@@ -336,6 +336,282 @@ body {
     overflow-x: hidden;
 }
 .s3videoL video{
-    width: 120%;
-    height: 120%;
+    width: 130%;
+    height: 130%;
+}
+
+
+@media (max-width: 500px) {
+    .innerS3 h1{
+        font-size: 10vw;
+        width: 90%;
+        line-height: 10vw;
+    }   
+    .s3box1,.s3box2{
+        flex-direction: column;
+    }
+    .box1left{
+        width: 95%;
+    }
+    .box1left p{
+        width: 100%;
+        font-size: 4.5vw;
+        padding-bottom: 5vw;
+    }
+    .box1right{
+        width: 48%;
+        height: 38vw;
+        overflow: hidden;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        transform: translateY(10vw);
+    }
+    .box1right video{
+        width: 105%;
+        height: 105%;
+    }
+    .box2right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box2right p{
+        width: 95%;
+        font-size: 4.5vw;
+        padding-bottom: 5vw;
+    }
+
+    .box2left{
+        align-self: flex-end;
+        justify-content: end;
+        align-items: end;
+        transform: translateY(-20vw);
+        position: relative;
+    }
+    .innerBL{
+        width: 75%;
+        transform: translateY(0vw);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .s3imgL{
+        width: 100%;
+        height: 37vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    .s3imgL img{
+        width: 105%;
+        height: 105%;
+    }
+
+    .s3videoL{
+        margin-top: 0vw;
+        width: 100%;
+        height: 36vw;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        overflow-x: hidden;
+        position: absolute;
+        transform: translateY(45vw);
+    }
+    .s3videoL video{
+        width: 130%;
+        height: 130%;
+    }
+
+    .s3imgR{
+        width: 40vw;
+        height: 40vw;
+        overflow: hidden;
+        overflow-x: hidden;
+        margin-bottom: 0vw;
+        align-self: flex-start;
+        transform: translateY(-22vw);
+    }
+    .s3imgR img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .submitBtn {
+        font-size: 4vw;
+        height: 12vw;
+        width: 30vw;
+        margin: 1.5vw 2vw;
+        align-self: flex-start;
+    }
+}
+
+
+/* SECTION 4 */
+.section4{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vw 0 0;
+}
+.section4 h1{
+    font-size: 5vw;
+    font-family: var(--primaryFont);
+    font-weight: 800;
+}
+.section4 p{
+    font-size: 1.3vw;
+    padding: 1vw 0;
+    font-family: var(--secondaryFont);
+}
+.s4bar{
+    padding: 3vw 0;
+}
+.s4bar>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45vw;
+}
+.s4bar>li>ul{
+    font-family: var(--secondaryFont);
+    font-weight: 800;
+    font-size: 1.5vw;
+    padding: 0.3vw 1.75vw;
+    border-radius: 25px;
+    transition: background-color 0.2s linear;
+}
+
+.s4bar>li>ul:hover{
+    background-color: #e2e2e2;
+}
+.s4bar>li>ul:active{
+    background-color: #8BF6F6;
+}
+@media (max-width : 500px) {
+    .section4{
+        padding: 10vw 0 0;
+    }
+    .section4 h1{
+        font-size: 10vw;
+    }
+    .section4 p{
+        font-size: 4vw;
+    }
+    .s4bar{
+        padding: 5vw 0;
+    }
+    .s4bar>li{
+        width: 80vw;
+    }
+    .s4bar>li>ul{
+        font-size: 3vw;
+        background-color: #e2e2e2;
+        transition: background-color 0.2s linear;
+    }
+}
+
+
+
+/* Section 5 */
+.section5{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerS5{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.s5boxes{
+    width: 22.4vw;
+    height: 25vw;
+    margin-bottom: 1.3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.aboutVideos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    top: 0%;
+    transition: height 0.2s linear;
+}
+.aboutVideos video{
+    width: 25vw;
+    height: auto;
+}
+.aboutInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1vw;
+    transition: all 0.2s linear;
+}
+.aboutInfo p{
+    font-size: 1vw;
+    font-family: var(--secondaryFont);
+    color: #437285;
+    transition: all 0.2s linear;
+}
+.aboutInfo h1{
+    font-size: 1.4vw;
+    font-family: var(--secondaryFont);
+    color: #000;
+    font-weight: 900;
+    transition: all 0.2s linear;
+}
+.aboutVideos:hover{
+    height: 90%;
+}
+@media (max-width : 500px) {
+    .innerS5{
+        justify-content: center;
+        gap: 4%;
+    }
+    .s5boxes{
+        width: 42vw;
+        height: 45vw;
+        margin-bottom: 3vw;
+    }
+    .aboutVideos video{
+        width: 45vw;
+        height: auto;
+    }
+    .aboutVideos:hover{
+        height: 100%;
+    }
+    .aboutInfo{
+        padding: 0 2vw;
+    }
+    .aboutInfo p{
+        font-size: 3vw;
+    }
+    .aboutInfo h1{
+        font-size: 5vw;
+    }
 }
