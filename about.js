@@ -58,14 +58,44 @@ if (window.innerWidth > 500) {
 gsap.registerPlugin(ScrollTrigger);
 
 if(window.innerWidth > 500){
-    // gsap.to(".videoS3" ,{
-    //     scrollTrigger: {
-    //         trigger: ".s3box1",
-    //         start: "0% 90%",
-    //         end: "50% 50%",
-    //         scrub: true,
-    //         markers:true,
-    //     },
-    //     scale: 0.8,
-    // });
+    gsap.from(".videobox1" ,{
+        scrollTrigger: {
+            trigger: ".s3box1",
+            start: "10% 90%",
+            end: "80% 50%",
+            scrub: true,
+        },
+        width: "60vw",
+        height: "60vw",
+    });
+    gsap.to(".imgS3r" ,{
+        scrollTrigger: {
+            trigger: ".s3box2",
+            start: "5% 90%",
+            end: "30% 50%",
+            scrub: true,
+        },
+        width: "19vw",
+        height: "19vw",
+    });
+    gsap.from(".imgS3l" ,{
+        scrollTrigger: {
+            trigger: ".s3box2",
+            start: "10% 90%",
+            end: "35% 50%",
+            scrub: true,
+        },
+        width: "40vw",
+        height: "40vw",
+    });
+    gsap.from(".vids3l" ,{
+        scrollTrigger: {
+            trigger: ".s3box2",
+            start: "30% 90%",
+            end: "70% 50%",
+            scrub: true,
+        },
+        width: "40vw",
+        height: "40vw",
+    });
 }

@@ -212,8 +212,8 @@ body {
     justify-content: center;
 }
 .s3imgR img{
-    width: 100%;
-    height: 100%;
+    width: 25vw;
+    height: 25vw;
 }
 .box2right p{
     width: 100%;
