@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+a, button, img{
+    cursor: none;
+}
+:root{
+    --primaryFont: "Inter", serif;
+    --secondaryFont: "Montserrat", sans-serif, serif;
+    --Orange: #e3720f;
+    --Main-Color: #EBECE7;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    display: none;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    display: none;
+}
+
+
+
+
+body {
+  cursor: none;
+  background: var(--Main-Color);
+  transition: all 0.2s linear;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
+}
+
+
+/* SECTION 1 */
+.section1{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0 0 3.5vw 0;
+}
+.innerS1{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s1right{
+    width: 65%;
+}
+.s1right h1{
+    width: 80%;
+    font-size: 4vw;
+    font-family: var(--primaryFont);
+    font-weight: 800;
+}
+.s1left{
+    width: 35%;
+}
+.s1left p{
+    font-family: var(--secondaryFont);
+    font-size: 1.42vw;
+}
+
+
+
+/* SECTION 2 */
+.section2{
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s2Video{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 500px) {
+    .section2{
+        height: fit-content;
+    }
+    .section1{
+        height: 70vh;
+        padding: 0 0 8vw 0;
+    }
+    .innerS1{
+        width: 83%;
+        height: 60%;
+        justify-content: end;
+        align-items: start;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .s1left,.s1right{
+        width: 100%;
+    }
+    .s1right h1{
+        width: 100%;
+        font-size: 10vw;
+        font-weight: 900;
+        line-height: 10vw;
+    }
+    .s1left p{
+        font-size: 5.5vw;
+    }
+}
+
+/* SECTION 3 */
+.section3{
+    width: 100vw;
+    padding: 10vw 0;
+    background-color: #06171D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerS3{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.innerS3 h1{
+    width: 75%;
+    font-size: 5vw;
+    font-family: var(--primaryFont);
+    font-weight: 800;
+    color: #fff;
+    align-self: flex-start;
+    line-height: 5vw;
+    /* padding: 0 0 5vw 0; */
+}
+.s3box1{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8vw 0 0 0;
+}
+.box1left,.box2left{
+    width: 60%;
+}
+.box1left p{
+    width: 80%;
+    color: #9EFCF1;
+    font-family: var(--secondaryFont);
+    font-size: 1.5vw;
+    padding: 2vw 0;
+}
+
+.box1right{
+    width: 40%;
+    height: 35vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1right video{
+    width: 105%;
+    height: 105%;
+}
+
+
+.s3box2{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 4vw 0 0 0;
+}
+.box2right{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+.s3imgR{
+    width: 19vw;
+    height: 19vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    margin-bottom: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s3imgR img{
+    width: 25vw;
+    height: 25vw;
+}
+.box2right p{
+    width: 100%;
+    color: #9EFCF1;
+    font-family: var(--secondaryFont);
+    font-size: 1.5vw;
+    padding: 1.5vw 0;
+}
+.submitBtn {
+    align-items: center;
+    appearance: none;
+    background-color: #000;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    height: 4vw;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 11vw;
+    will-change: transform,opacity;
+    z-index: 0;
+    opacity: 0; /* Initially invisible */
+    animation: headerStarter 1.5s ease-in 0.5s forwards;
+    margin: 1.5vw 0;
+}
+  
+.submitBtn:hover {
+    transition: ease 0.2s;
+    background: var(--Orange);
+    color: #f3f3f3;
+    transform: scale(1.04);
+}
+  
+.submitBtn:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+  
+.submitBtn:focus {
+    outline: none;
+    background-color: var(--Orange) ;
+    color: #f3f3f3;
+}
+  
+.submitBtn:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.submitBtn:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.submitBtn:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.submitBtn:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.submitBtn:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.box2left{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.innerBL{
+    width: 65%;
+    transform: translateY(4vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.s3imgL{
+    width: 100%;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.s3imgL img{
+    width: 105%;
+    height: 105%;
+}
+
+.s3videoL{
+    margin-top: 3vw;
+    width: 40%;
+    height: 12.5vw;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.s3videoL video{
+    width: 130%;
+    height: 130%;
+}
+
+
+@media (max-width: 500px) {
+    .innerS3 h1{
+        font-size: 10vw;
+        width: 90%;
+        line-height: 10vw;
+    }   
+    .s3box1,.s3box2{
+        flex-direction: column;
+    }
+    .box1left{
+        width: 95%;
+    }
+    .box1left p{
+        width: 100%;
+        font-size: 4.5vw;
+        padding-bottom: 5vw;
+    }
+    .box1right{
+        width: 48%;
+        height: 38vw;
+        overflow: hidden;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        transform: translateY(10vw);
+    }
+    .box1right video{
+        width: 105%;
+        height: 105%;
+    }
+    .box2right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box2right p{
+        width: 95%;
+        font-size: 4.5vw;
+        padding-bottom: 5vw;
+    }
+
+    .box2left{
+        align-self: flex-end;
+        justify-content: end;
+        align-items: end;
+        transform: translateY(-20vw);
+        position: relative;
+    }
+    .innerBL{
+        width: 75%;
+        transform: translateY(0vw);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .s3imgL{
+        width: 100%;
+        height: 37vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    .s3imgL img{
+        width: 105%;
+        height: 105%;
+    }
+
+    .s3videoL{
+        margin-top: 0vw;
+        width: 100%;
+        height: 36vw;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        overflow-x: hidden;
+        position: absolute;
+        transform: translateY(45vw);
+    }
+    .s3videoL video{
+        width: 130%;
+        height: 130%;
+    }
+
+    .s3imgR{
+        width: 40vw;
+        height: 40vw;
+        overflow: hidden;
+        overflow-x: hidden;
+        margin-bottom: 0vw;
+        align-self: flex-start;
+        transform: translateY(-22vw);
+    }
+    .s3imgR img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .submitBtn {
+        font-size: 4vw;
+        height: 12vw;
+        width: 30vw;
+        margin: 1.5vw 2vw;
+        align-self: flex-start;
+    }
+}
+
+
+/* SECTION 4 */
+.section4{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vw 0 0;
+}
+.section4 h1{
+    font-size: 5vw;
+    font-family: var(--primaryFont);
+    font-weight: 800;
+}
+.section4 p{
+    font-size: 1.3vw;
+    padding: 1vw 0;
+    font-family: var(--secondaryFont);
+}
+.s4bar{
+    padding: 3vw 0;
+}
+.s4bar>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45vw;
+}
+.s4bar>li>ul{
+    font-family: var(--secondaryFont);
+    font-weight: 800;
+    font-size: 1.5vw;
+    padding: 0.3vw 1.75vw;
+    border-radius: 25px;
+    transition: background-color 0.2s linear;
+}
+
+.s4bar>li>ul:hover{
+    background-color: #e2e2e2;
+}
+.s4bar>li>ul:active{
+    background-color: #8BF6F6;
+}
+@media (max-width : 500px) {
+    .section4{
+        padding: 10vw 0 0;
+    }
+    .section4 h1{
+        font-size: 10vw;
+    }
+    .section4 p{
+        font-size: 4vw;
+    }
+    .s4bar{
+        padding: 5vw 0;
+    }
+    .s4bar>li{
+        width: 80vw;
+    }
+    .s4bar>li>ul{
+        font-size: 3vw;
+        background-color: #e2e2e2;
+        transition: background-color 0.2s linear;
+    }
+}
+
+
+
+/* Section 5 */
+.section5{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerS5{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.s5boxes{
+    width: 22.4vw;
+    height: 25vw;
+    margin-bottom: 1.3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.aboutVideos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    top: 0%;
+    transition: height 0.2s linear;
+}
+.aboutVideos video{
+    width: 25vw;
+    height: auto;
+}
+.aboutInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1vw;
+    transition: all 0.2s linear;
+}
+.aboutInfo p{
+    font-size: 1vw;
+    font-family: var(--secondaryFont);
+    color: #437285;
+    transition: all 0.2s linear;
+}
+.aboutInfo h1{
+    font-size: 1.4vw;
+    font-family: var(--secondaryFont);
+    color: #000;
+    font-weight: 900;
+    transition: all 0.2s linear;
+}
+.aboutVideos:hover{
+    height: 90%;
+}
+@media (max-width : 500px) {
+    .innerS5{
+        justify-content: center;
+        gap: 4%;
+    }
+    .s5boxes{
+        width: 42vw;
+        height: 45vw;
+        margin-bottom: 3vw;
+    }
+    .aboutVideos video{
+        width: 45vw;
+        height: auto;
+    }
+    .aboutVideos:hover{
+        height: 100%;
+    }
+    .aboutInfo{
+        padding: 0 2vw;
+    }
+    .aboutInfo p{
+        font-size: 3vw;
+    }
+    .aboutInfo h1{
+        font-size: 5vw;
+    }
+}

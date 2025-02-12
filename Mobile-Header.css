@@ -12,7 +12,6 @@
 
 .video-mob-container, .videoIn-mobile{
     display: none !important;
-    opacity: 0 !important;
 }
 
 .nav-mob {
@@ -96,19 +95,21 @@
 
     .video-mob-container{
         margin-top: 30vh;
-        display: inline-block;
+        display: flex !important;
         width: 100vw;
-        height: 30vh;
+        height: 32vh;
         overflow: hidden;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
         opacity: 1;
+        border-radius: 0px;
     }
-    .video-mob-container video{
-        display: inline-block;
-        opacity: 1;
-        width: 100%;
-        height: 100%;
-    }
-    
+    .videoIn-mobile{
+      display: flex !important;
+      width: 120%;
+      height: auto;
+  }
     .parallax-image{
         display: none !important;
     }
