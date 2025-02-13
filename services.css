@@ -129,7 +129,7 @@ body {
 /* SECTION 3 */
 .section3{
     width: 100vw;
-    padding: 10vw 0;
+    padding: 10vw 0 0;
     background-color: #06171D;
     display: flex;
     justify-content: center;
@@ -224,7 +224,317 @@ body {
 .contentUp{
     transform: translateY(-10vw);
 }
+.darkContMob{
+    display: none;
+}
 
 @media (max-width: 500px) {
+    .innerS3{
+        width: 90%;
+        flex-direction: column;
+    }
+    .s3left,.s3right{
+        width: 100%;
+    }
+    .s3right{
+        padding: 0 0 0 0vw;
+    }
+    .s3left>h1{
+        width: 100%;
+        font-size: 11vw;
+        line-height: 11vw;
+        margin: 0 0 10vw;
+    }
+    .videoS3{
+        width: 60vw;
+        height: 60vw;
+        align-self: flex-end;
+    }
+    .video1s3{
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .contentS3{
+        transform: translateY(-15vw);
+    }
+    .darkCont{
+        display: none;
+    }
+    .darkContMob{
+        display: flex;
+        font-size: 4vw;
+        color: #9EFCF1;
+        font-family: var(--secondaryFont);
+    }
+    .lightCont{
+        font-size: 4vw;
+        padding-left: 1vw;
+    }
     
+    .contentS3>h1{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    .contentS3>p{
+        font-size: 4vw;
+        padding: 5vw 0 0 30vw;
+        line-height: 10vw;
+    }
+    
+    .contentUp{
+        transform: translateY(-25vw);
+    }
+}
+
+
+
+
+/* SECTION 4 */
+.section4{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7vw 0 0;
+}
+.s4Cont{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.s4Cont>h1{
+    font-size: 5vw;
+    font-family: var(--primaryFont);
+    font-weight: 800;
+    color: #000;
+    line-height: 4.8vw;
+    width: 70%;
+    align-self: flex-start;
+}
+.s4Cont>p{
+    font-size: 1.7vw;
+    font-family: var(--secondaryFont);
+    color: #000;
+    padding: 3vw 0;
+    width: 60%;
+    align-self: flex-end;
+}
+@media (max-width:500px) {
+    .s4Cont{
+        width: 80%;
+        padding: 5vw 0 10vw;
+    }
+    .s4Cont>h1{
+        font-size: 9.5vw;
+        font-family: var(--primaryFont);
+        font-weight: 800;
+        color: #000;
+        line-height: 9.2vw;
+        width: 100%;
+        align-self: flex-start;
+    }
+    .s4Cont>p{
+        font-size: 4vw;
+        font-family: var(--secondaryFont);
+        color: #000;
+        padding: 3vw 0;
+        width: 100%;
+        align-self: flex-start;
+    }
+}
+
+
+
+/* VIDEO SECTION */
+.videoSection{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoInner{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.vsections{
+    width: 39.3%;
+    display: flex;
+    justify-content: space-between;
+}
+.vCards{
+    width: 18.1vw;
+    height: 26.5vw;
+    margin-bottom: 1.7vw;
+    border-radius: 20px;
+}
+.imgCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17vw;
+}
+.rect-img{
+    width: 18.1vw;
+    height: auto;
+}
+.rect-img2{
+    transform: translate(1.5vw, -1.5vw);
+    width: 18vw;
+    height: auto;
+}
+.rect-img3{
+    transform: translate(0, -2vw);
+    width: 18vw;
+    height: auto;
+}
+
+.vCard2, .vCard9{
+    background-color: #FFFA78;
+}
+.vCard8 , .vCard4{
+    background-color: #9EFCF1;
+}
+.vCard1{
+    background-color: #00364B;
+}
+.vCard3 , .vCard7{
+    background-color: #06171D;
+}
+.vCard4,.vCard10,.vCard1,.vCard8,.vCard3,.vCard7{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.card4Title,.card1Title{
+    width: 82%;
+    display: flex;
+    gap: 2%;
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin-top: 1.5vw;
+}
+.dark4title{
+    font-family: var(--secondaryFont);
+    color: #06171D;
+}
+.light4title{
+    font-family: var(--secondaryFont);
+    color: #BDBE60;
+}
+.contentCard4,.contentCard1{
+    width: 82%;
+    color: #06171D;
+    margin-bottom: 1.5vw;
+}
+.headingCard4,.headingCard1{
+    font-weight: 700;
+    font-family: var(--secondaryFont);
+    /* font-size: 2.5vw; */
+    margin-bottom: 0.8vw;
+}
+.cont4,.cont1{
+    font-size: 1.1vw;
+    font-family: var(--secondaryFont);
+}
+.dark1title{
+    font-family: var(--secondaryFont);
+    color: #9EFCF1;
+}
+.light1title{
+    font-family: var(--secondaryFont);
+    color: #2F727D;
+}
+.contentCard1{
+    color: #9EFCF1;
+}
+.cont1,.content4{
+    font-size: 1.2vw;
+}
+.dark3Title{
+    font-family: var(--secondaryFont);
+    color: #E9EAE5;
+}
+.light3Title{
+    font-family: var(--secondaryFont);
+    color: #495558;
+}
+.headingCard3,.cont3{
+    color: #E9EAE5;
+}
+.hCard7{
+    font-size: 3vw;
+}
+
+.vSec-p3{
+    margin: 0 1.65vw;
+}
+
+
+@media (max-width:500px) {
+    .videoInner{
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: end;
+    }
+    .vsections{
+        width: 100%;
+        justify-content: center;
+        align-items: start;
+        gap: 5%;
+    }
+    .vCards{
+        width: 44vw;
+        height: 64vw;
+        border-radius: 20px;
+        margin-bottom: 4vw;
+    }
+    .imgCard{
+        overflow: hidden;
+    }
+    .rect-img,.rect-img2,.rect-img3{
+        width: 65vw;
+        height: auto;
+    }
+    .vCardmid{
+        width: 100%;
+    }
+    .card4Title,.card1Title{
+        gap: 4%;
+        font-size: 4.5vw;
+        margin-top: 3vw;
+    }
+    .contentCard4,.contentCard1{
+        margin-bottom: 4vw;
+    }
+    /* .headingCard4,.headingCard1{
+        font-size: 8vw;
+        margin-bottom: 2.5vw;
+    } */
+    /* .cont4,.cont1{
+        font-size: 5vw;
+    } */
+    /* .headingCard1{
+        font-size: 12vw;
+    } */
+    .cont1,.content4{
+        font-size: 3.5vw;
+    }
+    .hCard7{
+        font-size: 6vw;
+        padding-bottom: 2vw;
+    }
+    .card4Title{
+        font-size: 2.5vw;
+    }
+    .card10Title{
+        font-size: 4.5vw;
+    }
 }
