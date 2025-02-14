@@ -1549,13 +1549,13 @@ body.dark .box-title, body.dark .box-para{
         transform: translateY(0vw);
     }
     .vSec-p2{
-        transform: translateY(11vw);
+        transform: translateY(9vw) !important;
     }
     .vSec-p4{
-        transform: translateY(0vw);
+        transform: translateY(0vw) !important;
     }
     .vSec-p5{
-        transform: translateY(0vw);
+        transform: translateY(-2vw) !important;
     }
 
 
