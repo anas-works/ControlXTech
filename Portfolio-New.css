@@ -1,0 +1,156 @@
+.Portfolio-New {
+    overflow-x: hidden !important;
+    overflow-y: visible;
+    min-height: 100vh;
+    background-color: #EBECE7;
+}
+
+
+.parent {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* Make it scrollable */
+    background-color: #EBECE7;
+    overflow: hidden;
+  }
+  
+  .container-portfolio {
+    position: absolute;
+    top: 0%;
+    right: 0vw;
+    /* Start completely outside the viewport */
+    height: 100%;
+    width: 100vw;
+    background-color: #06171D;
+    border-top-left-radius: 0px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  /* .HeadingText {
+    position: absolute;
+    top: 6%;
+    right: 0; 
+    white-space: nowrap; 
+    font-size: 26vw;
+    font-weight: 400;
+    color: white;
+    z-index: 10;
+  } */
+
+  .h222{
+    color: white;
+    font-size: 26vw;
+    font-weight: 400;
+    white-space: nowrap; /* Prevents text wrapping */
+    padding-top: 10%;
+    transform: translateX(100vw);
+    word-spacing: 3vw;
+  }
+  
+  .portfolio-pics-Container {
+    /* background-color: gray; */
+    height: 400vh;
+    width: 100vw;
+    position: absolute;
+    /* top: 0vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    /* gap: 8vw; */
+    z-index: 1000;
+    /* border: 3px solid red; */
+    transform: translateY(0vh);
+  }
+  
+  .fifty-perc-cont-1{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 40%;
+    left: 8%;
+  }
+  .fifty-perc-cont-2{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    top: 57%;
+    right: 8%;
+  }
+  
+  .fifty-perc-cont-3{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid violet; */
+    position: absolute;
+    top: 74%;
+    left: 8%;
+  }
+  .fifty-perc-cont-4{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 91%;
+    right: 8%;
+  }
+  .fifty-perc-cont-5{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 118%;
+    left: 8%;
+  }
+  
+  
+  .inner-Portfolio-pics-Container{
+    /* background-color:red; */
+    height: 70vh;
+    width: 70vh;
+    border-radius: 20px;
+    /* position: absolute;
+    top: 0%; */
+    z-index: 2000;
+  }
+  
+  .portfolio-bg-img-1{
+    background-image: url(/Portfolios/REALM-PORTFOLIO.jpeg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .portfolio-bg-img-2{
+    background-image: url(/Portfolios/GBS-PORTFOLIO.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .portfolio-bg-img-3{
+    background-image: url(/Portfolios/BluHood-PORTFOLIO.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .portfolio-bg-img-4{
+    background-image: url(/Portfolios/ECO-PORTFOLIO.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
