@@ -129,7 +129,7 @@ body {
 /* SECTION 3 */
 .section3{
     width: 100vw;
-    padding: 10vw 0 0;
+    padding: 5vw 0 0;
     background-color: #06171D;
     display: flex;
     justify-content: center;
@@ -188,7 +188,7 @@ body {
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    transform: translateY(-7vw);
+    transform: translateY(-8vw);
 }
 .number{
     display: flex;
@@ -213,6 +213,7 @@ body {
     font-weight: 900;
     color: #fff;
     line-height: 3.8vw;
+    padding: 1vw 0 0;
 }
 .contentS3>p{
     font-size: 1.4vw;
@@ -222,7 +223,7 @@ body {
 }
 
 .contentUp{
-    transform: translateY(-10vw);
+    transform: translateY(-11vw);
 }
 .darkContMob{
     display: none;
@@ -256,7 +257,7 @@ body {
     }
 
     .contentS3{
-        transform: translateY(-15vw);
+        transform: translateY(-22vw);
     }
     .darkCont{
         display: none;
@@ -273,8 +274,9 @@ body {
     }
     
     .contentS3>h1{
-        font-size: 8vw;
-        line-height: 8vw;
+        font-size: 11vw;
+        line-height: 11vw;
+        padding: 2vw 0 0;
     }
     .contentS3>p{
         font-size: 4vw;
@@ -283,7 +285,7 @@ body {
     }
     
     .contentUp{
-        transform: translateY(-25vw);
+        transform: translateY(-35vw);
     }
 }
 
@@ -354,6 +356,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 9vw 0 0;
 }
 .videoInner{
     width: 97%;
@@ -391,6 +394,9 @@ body {
     transform: translate(0, -2vw);
     width: 18vw;
     height: auto;
+}
+.vSection-p{
+    transition: all 0.1s linear;
 }
 
 .vCard2, .vCard9{
@@ -477,6 +483,9 @@ body {
 
 
 @media (max-width:500px) {
+    .videoSection{
+        padding: 0vw 0 0;
+    }
     .videoInner{
         width: 97%;
         display: flex;
