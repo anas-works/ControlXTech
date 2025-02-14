@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-function applyScrollAnimations() {
-    if (window.innerWidth > 500) {
+if (window.innerWidth > 500) {
         gsap.to(".vidCard", {
             scrollTrigger: {
                 trigger: ".videoSection",
@@ -562,14 +561,6 @@ function applyScrollAnimations() {
             opacity: 1,
         });
     }
-}
-
-// Initial check on page load
-applyScrollAnimations();
-
-// Recheck on window resize
-window.addEventListener('resize', applyScrollAnimations);
-
 
 
 const splitTypes = document.querySelectorAll('.aPara1');
