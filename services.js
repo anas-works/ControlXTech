@@ -96,4 +96,89 @@ if (window.innerWidth >= 500) {
         scale: 1.2,
         ease: "sine.inOut",
     });
+
+    gsap.from(".box1", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "5% 60%",
+            end: "5% 60%",
+            scrub: false,
+        },
+        opacity: 0,
+        ease: "sine.inOut",
+    });
+    gsap.from(".box2", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "20% 60%",
+            end: "20% 60%",
+            scrub: false,
+        },
+        opacity: 0,
+        ease: "sine.inOut",
+    });
+    gsap.from(".box3", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "30% 60%",
+            end: "30% 60%",
+            scrub: false,
+        },
+        opacity: 0,
+        ease: "sine.inOut",
+    });
+    gsap.from(".box4", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "60% 60%",
+            end: "60% 60%",
+            scrub: false,
+        },
+        opacity: 0,
+        ease: "sine.inOut",
+    });
+    gsap.from(".content1", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "7% 60%",
+            end: "7% 60%",
+            scrub: false,
+        },
+        y: 5,
+        opacity: 0,
+        ease: "sine.inOut",
+    });
+    gsap.from(".content2", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "22% 60%",
+            end: "22% 60%",
+            scrub: false,
+        },
+        y: 5,
+        opacity: 0,
+        ease: "sine.inOut",
+    });
+    gsap.from(".content3", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "32% 60%",
+            end: "32% 60%",
+            scrub: false,
+        },
+        y: 5,
+        opacity: 0,
+        ease: "sine.inOut",
+    });
+    gsap.from(".content4", {
+        scrollTrigger: {
+            trigger: ".section3",
+            start: "62% 60%",
+            end: "62% 60%",
+            scrub: false,
+        },
+        y: 5,
+        opacity: 0,
+        ease: "sine.inOut",
+    });
 }
