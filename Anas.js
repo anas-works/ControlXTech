@@ -15,7 +15,7 @@ document.addEventListener("mousemove", (event) => {
 
   
   
-
+  gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -140,6 +140,106 @@ const activateDarkMode = () => {
   document.body.classList.add("dark-mode");
   toggleBtnContainer.style.backgroundColor = "#EBECE7"; // Dark background for the container
 
+
+  const splitTypes = document.querySelectorAll('.aPara1');
+    
+    splitTypes.forEach((char,i) => {
+        
+        const bgDark = char.dataset.bgdarkColor
+        const fgDark = char.dataset.fgdarkColor
+        const fontFamily = "'Montserrat', sans-serif";
+        
+        const text = new SplitType(char, { types: 'chars'});
+        text.chars.forEach(charElement => {
+            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+        });
+        
+        gsap.fromTo(text.chars, 
+            {
+                color: bgDark,
+            },
+            {
+                color: fgDark,
+                duration: 0.3,
+                stagger: 0.02,
+                // transition: "0.3s ease color",
+                scrollTrigger: {
+                    trigger: char,
+                    start: 'top 80%',
+                    end: '100% 60%',
+                    scrub: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+    });
+        
+        
+    const splitTypes2 = document.querySelectorAll('.aPara2');
+    
+    splitTypes2.forEach((char,i) => {
+      const bgDark = char.dataset.bgdarkColor
+      const fgDark = char.dataset.fgdarkColor
+        const fontFamily = "'Montserrat', sans-serif";
+        
+        const text = new SplitType(char, { types: 'chars'});
+        text.chars.forEach(charElement => {
+            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+        });
+        
+        gsap.fromTo(text.chars, 
+            {
+                color: bgDark,
+            },
+            {
+                color: fgDark,
+                duration: 0.3,
+                stagger: 0.02,
+                // transition: "0.3s ease color",
+                scrollTrigger: {
+                    trigger: char,
+                    start: '-10% 60%',
+                    end: '100% 60%',
+                    scrub: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+    });
+    
+        
+    const splitTypes3 = document.querySelectorAll('.aPara3');
+    
+    splitTypes3.forEach((char,i) => {
+        const bgDark = char.dataset.bgdarkColor
+        const fgDark = char.dataset.fgdarkColor
+        const fontFamily = "'Montserrat', sans-serif";
+        
+        
+        const text = new SplitType(char, { types: 'chars'});
+        text.chars.forEach(charElement => {
+            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+        });
+        
+        gsap.fromTo(text.chars, 
+            {
+                color: bgDark,
+            },
+            {
+                color: fgDark,
+                duration: 0.3,
+                stagger: 0.02,
+                // transition: "0.3s ease color",
+                scrollTrigger: {
+                    trigger: char,
+                    start: '-10% 60%',
+                    end: '100% 60%',
+                    scrub: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+    });
+
+
+
   // Update toggle button icon
   toggleIcon.textContent = "🌙"; // Moon for dark mode
 };
@@ -149,6 +249,104 @@ const deactivateDarkMode = () => {
   isDarkModeActive = false;
   document.body.classList.remove("dark-mode");
   toggleBtnContainer.style.backgroundColor = "#06171D"; // Light background for the container
+
+
+  const splitTypes = document.querySelectorAll('.aPara1');
+    
+    splitTypes.forEach((char,i) => {
+        
+        const bg = char.dataset.bgColor
+        const fg = char.dataset.fgColor
+        const fontFamily = "'Montserrat', sans-serif";
+        
+        const text = new SplitType(char, { types: 'chars'});
+        text.chars.forEach(charElement => {
+            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+        });
+        
+        gsap.fromTo(text.chars, 
+            {
+                color: bg,
+            },
+            {
+                color: fg,
+                duration: 0.3,
+                stagger: 0.02,
+                // transition: "0.3s ease color",
+                scrollTrigger: {
+                    trigger: char,
+                    start: 'top 80%',
+                    end: '100% 60%',
+                    scrub: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+    });
+        
+        
+    const splitTypes2 = document.querySelectorAll('.aPara2');
+    
+    splitTypes2.forEach((char,i) => {
+        const bg = char.dataset.bgColor
+        const fg = char.dataset.fgColor
+        const fontFamily = "'Montserrat', sans-serif";
+        
+        const text = new SplitType(char, { types: 'chars'});
+        text.chars.forEach(charElement => {
+            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+        });
+        
+        gsap.fromTo(text.chars, 
+            {
+                color: bg,
+            },
+            {
+                color: fg,
+                duration: 0.3,
+                stagger: 0.02,
+                // transition: "0.3s ease color",
+                scrollTrigger: {
+                    trigger: char,
+                    start: '-10% 60%',
+                    end: '100% 60%',
+                    scrub: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+    });
+    
+        
+    const splitTypes3 = document.querySelectorAll('.aPara3');
+    
+    splitTypes3.forEach((char,i) => {
+        const bg = char.dataset.bgColor
+        const fg = char.dataset.fgColor
+        const fontFamily = "'Montserrat', sans-serif";
+        
+        
+        const text = new SplitType(char, { types: 'chars'});
+        text.chars.forEach(charElement => {
+            charElement.style.fontFamily = fontFamily; // Apply the font-family to each character
+        });
+        
+        gsap.fromTo(text.chars, 
+            {
+                color: bg,
+            },
+            {
+                color: fg,
+                duration: 0.3,
+                stagger: 0.02,
+                // transition: "0.3s ease color",
+                scrollTrigger: {
+                    trigger: char,
+                    start: '-10% 60%',
+                    end: '100% 60%',
+                    scrub: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+            });
+    });
 
   // Update toggle button icon
   toggleIcon.textContent = "☀️"; // Sun for light mode
