@@ -144,7 +144,7 @@ if (window.innerWidth >= 500) {
             end: "7% 60%",
             scrub: false,
         },
-        y: 10,
+        y: 5,
         opacity: 0,
         ease: "sine.inOut",
     });
@@ -155,7 +155,7 @@ if (window.innerWidth >= 500) {
             end: "22% 60%",
             scrub: false,
         },
-        y: 10,
+        y: 5,
         opacity: 0,
         ease: "sine.inOut",
     });
@@ -166,7 +166,7 @@ if (window.innerWidth >= 500) {
             end: "32% 60%",
             scrub: false,
         },
-        y: 10,
+        y: 5,
         opacity: 0,
         ease: "sine.inOut",
     });
@@ -177,7 +177,7 @@ if (window.innerWidth >= 500) {
             end: "62% 60%",
             scrub: false,
         },
-        y: 10,
+        y: 5,
         opacity: 0,
         ease: "sine.inOut",
     });
