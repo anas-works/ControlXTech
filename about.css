@@ -89,7 +89,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .s2Video{
     width: 100%;
@@ -469,6 +469,7 @@ body {
     font-size: 5vw;
     font-family: var(--primaryFont);
     font-weight: 800;
+    margin-top: 3vw;
 }
 .section4 p{
     font-size: 1.3vw;
@@ -530,6 +531,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 7vw;
 }
 .innerS5{
     width: 93%;
@@ -562,7 +564,7 @@ body {
 }
 .aboutVideos video{
     width: 25vw;
-    height: auto;
+    height: 25vw;
 }
 .aboutInfo{
     display: flex;
