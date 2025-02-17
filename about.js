@@ -10,9 +10,9 @@ if (window.innerWidth > 500) {
         // Mouseover event (hover)
         aboutVideos.addEventListener('mouseover', function() {
             // Increase font size and reduce padding on hover
-            aboutInfo.style.padding = '0 0';
-            aboutInfoH1.style.fontSize = '1.6vw'; // Increase font size of h1
-            aboutInfoP.style.fontSize = '1.2vw';  // Increase font size of p
+            aboutInfo.style.padding = '0 0.5vw';
+            aboutInfoH1.style.fontSize = '1.4vw'; // Increase font size of h1
+            aboutInfoP.style.fontSize = '1vw';  // Increase font size of p
             videos.play();
         });
         
