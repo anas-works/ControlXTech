@@ -41,13 +41,13 @@ if (window.innerWidth > 500) {
         const videos = box.querySelector('.videoS5');
     
         aboutVideos.addEventListener('click', function() {
-            if (aboutVideos.style.height === "85%") {
+            if (aboutVideos.style.height === "80%") {
                 // If height is 85%, reset to 100% and pause the video
                 aboutVideos.style.height = "100%";
                 videos.pause();
             } else {
                 // If height is not 85%, set height to 85% and play the video
-                aboutVideos.style.height = "85%";
+                aboutVideos.style.height = "80%";
                 videos.play();
             }
         });

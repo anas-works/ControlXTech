@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-if (window.innerWidth > 500) {
+if (window.innerWidth > 550) {
         gsap.to(".vidCard", {
             scrollTrigger: {
                 trigger: ".videoSection",
@@ -341,7 +341,7 @@ if (window.innerWidth > 500) {
                 end: "8% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl1", {
@@ -352,7 +352,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: "-10vw",
-            rotate: -40,
+            rotate: -25,
             opacity: 0,
             });
     
@@ -364,7 +364,7 @@ if (window.innerWidth > 500) {
                 end: "20% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl2", {
@@ -375,7 +375,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: 50,
-            rotate: 40,
+            rotate: 25,
             opacity: 0,
             });
     
@@ -387,7 +387,7 @@ if (window.innerWidth > 500) {
                 end: "30% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl3", {
@@ -398,7 +398,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: -50,
-            rotate: -40,
+            rotate: -25,
             opacity: 0,
             });
         
@@ -409,7 +409,7 @@ if (window.innerWidth > 500) {
                 end: "42% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl4", {
@@ -420,7 +420,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: 50,
-            rotate: 40,
+            rotate: 25,
             opacity: 0,
             });
         
@@ -431,7 +431,7 @@ if (window.innerWidth > 500) {
                 end: "55% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl5", {
@@ -442,7 +442,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: -50,
-            rotate: -40,
+            rotate: -25,
             opacity: 0,
             });
     
@@ -454,7 +454,7 @@ if (window.innerWidth > 500) {
                 end: "68% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl6", {
@@ -465,7 +465,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: 50,
-            rotate: 40,
+            rotate: 25,
             opacity: 0,
             });
     
@@ -477,7 +477,7 @@ if (window.innerWidth > 500) {
                 end: "80% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl7", {
@@ -488,7 +488,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: -50,
-            rotate: -40,
+            rotate: -25,
             opacity: 0,
             });
     
@@ -500,7 +500,7 @@ if (window.innerWidth > 500) {
                 end: "95% 60%",
                 scrub: true,
             },
-            y: "10vh" ,
+            y: "25vh" ,
             opacity: 0,
             });
             gsap.from("#bl8", {
@@ -511,7 +511,7 @@ if (window.innerWidth > 500) {
                 scrub: true,
             },
             x: 50,
-            rotate: 40,
+            rotate: 25,
             opacity: 0,
             });
                 

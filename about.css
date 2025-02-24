@@ -536,14 +536,15 @@ body {
 .innerS5{
     width: 93%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 1.2%;
     flex-wrap: wrap;
 }
 .s5boxes{
     width: 22.4vw;
     height: 25vw;
-    margin-bottom: 1.3vw;
+    margin-bottom: 1.2vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -611,9 +612,10 @@ body {
         padding: 0 2vw;
     }
     .aboutInfo p{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .aboutInfo h1{
-        font-size: 5vw;
+        width: 80%;
+        font-size: 3vw;
     }
 }
